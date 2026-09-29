@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Temp / cache
+.tmp/
+tmp/
+.cache/
+
+# Dependencies
+node_modules/
+
+# Editor
+*.swp
+.vscode/
+.idea/
+
+# Local Claude Code settings
+.claude/
