@@ -1,6 +1,6 @@
 # <文章标题>
 
-> 本模板基于 wechat-tech-article 的 10 节结构。选题 / 定标题 / 深度把握见 `skills/writing/wechat-tech-article/SKILL.md`。
+> 本模板提供长文可选结构，按文章类型合并或删减；短文可采用“问题→机制→结论”，不要求凑齐十节。选题 / 定标题 / 深度把握见 `skills/writing/wechat-tech-article/SKILL.md`。
 
 ## 钩子
 

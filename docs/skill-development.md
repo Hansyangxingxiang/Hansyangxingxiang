@@ -21,6 +21,10 @@
 - 验证与其他 Skill 无冲突、无重复规则。
 - 验证 frontmatter `name` 唯一且引用一致。
 
+## 回归评估
+
+按 [Skill 任务回归集](skill-regression.md) 对比修改前后表现。静态名称与引用检查不能替代客户端中的实际触发和产出评估。
+
 ## 命名约定
 
 - 目录名 = Skill 名（kebab-case）。

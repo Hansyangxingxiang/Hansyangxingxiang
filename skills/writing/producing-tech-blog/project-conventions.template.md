@@ -29,7 +29,7 @@ Target: X-Y words per article
 
 ## Code Blocks
 
-- Single block ≤15 lines
+- Prefer concise, semantically complete excerpts; preserve full code and validate mobile readability
 - Line reference format: `file.cpp:LINE`
 - Complex logic → pseudocode
 

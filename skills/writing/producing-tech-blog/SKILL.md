@@ -1,67 +1,29 @@
 ---
 name: producing-tech-blog
-description: Use when writing a technical blog article needing source code analysis, architecture diagrams, and WeChat-compatible HTML output — for multi-article series requiring structural consistency
+description: 将已有 Markdown 技术文章转换为适合微信公众号的内联 CSS HTML，并检查内容保真与排版。适用于已有正文只需排版、生成微信 HTML；不负责重新选题、源码研究或重写正文，内容写作使用 wechat-tech-article。
 ---
 
-# Producing Tech Blog
+# Producing Tech Blog — 微信 HTML 排版
 
-## Overview
+## 输入与边界
 
-4-stage pipeline: source analysis → diagram design → writing → dual-output formatting. Project-specific conventions (series outline, section template, terminology, source roots) live in a project-conventions file, NOT in this skill — swap projects by swapping that file.
+输入是已确认的 Markdown 正文、输出位置及可选项目排版约定。Markdown 是内容源，HTML 是派生产物。缺少正文时先获取正文或转入 technical-writing 工作流，不自行补写文章。
 
-## When to Use
+按项目说明查找排版约定；没有约定时使用 [微信样式](wechat-styles.md)，不要求先创建配置文件。[项目约定模板](project-conventions.template.md) 仅在维护系列文章确有需要时使用。
 
-- Writing a technical blog that references source code
-- Producing WeChat公众号 articles (or any platform needing inline-CSS HTML)
-- Multi-article series that must stay structurally consistent
+## 转换流程
 
-## Prerequisites
+1. 读取全文，盘点标题、段落、代码、图、表格、公式、图片与引用。确认输出路径，保留源稿及已有用户文件。
+2. 逐元素转换为 HTML，按微信样式添加内联 CSS。转义正文与代码中的 HTML 特殊字符；禁止将输入中的脚本或事件处理属性带入成品。
+3. 保留事实、数值、单位、术语、代码、链接目标和不确定性限定。不得重做研究、重排论证、增加案例或静默删减内容。发现技术疑点列为待确认项。
+4. 代码按完整语义展示；过长时优先调整展示方式，需要拆分或省略时保留完整源稿并说明。图使用等宽字体并检查窄屏；表格转为列表时保留行列对应关系。
+5. 图片保留来源与说明；未上传微信的图片记录待上传项。无法支持的公式或图示明确标注，不将空占位称为转换完成。
 
-Locate the project's blog conventions file (e.g. `docs/blog/blog-conventions.md`, or `blog-series.md` in the project memory dir). It defines: series outline, section template, word count, diagram style, terminology, source roots. None? Scaffold from `project-conventions.template.md` first.
+## 验收与交付
 
-## Phase 1: Source Analysis
+- 对照源稿检查标题、段落、数字、代码、图表信息及引用完整性，确认转义正确、标签闭合、CSS 内联且无外部脚本依赖。
+- 有浏览器时检查窄屏、长代码与图表；实际微信客户端预览单独记录。静态检查不能证明微信显示正常。
+- 交付源稿路径、HTML 路径和检查结果；区分已验证、待人工预览、待上传和受阻事项。
+- 无法生成或检查某元素时交付已有结果与具体缺口，不声称全部通过。
 
-1. Grep for key structs/functions by name — never trust memory for line numbers
-2. Read core structures/functions, record exact `file:line` references
-3. Trace data flow / call chains to find the article's spine
-4. MEMORY.md is a lead only — **verify every conclusion against current source** (lines drift)
-5. Output: "source map" — `{concept, file:line, one-line summary}` list
-
-## Phase 2: Diagram Design
-
-1. List 3-5 diagrams (one per major concept)
-2. ASCII art in fenced code blocks (box-drawing chars per project conventions)
-3. Each diagram MUST be **self-contained** — readable without surrounding prose
-4. Types: architecture overview, data-flow sequence, data structure, state machine, comparison table
-5. Caption: `**图 N：description**` below the code block
-
-## Phase 3: Writing
-
-1. Follow the project's section template (NeonSAN: hook 300-500 / background 500-800 / core design 1500-2500 / pitfalls 500-800 / summary 200-400)
-2. Code blocks ≤15 lines; pseudocode for complex logic; every reference carries `file:line`
-3. Hook: concrete scene + question; never start with "什么是 X"
-4. Core design: diagram + short code, explain WHY not WHAT
-5. Pitfalls: real bugs/gotchas with source evidence
-
-## Phase 4: Dual-Output Formatting
-
-**Markdown (.md) — source of truth:** save to the project blog dir (e.g. `docs/blog/article-NN-*.md`); ASCII diagrams in fenced code blocks; standard markdown.
-
-**WeChat HTML (.html) — publish version:** apply inline CSS from `wechat-styles.md` (WeChat strips `<style>` — every style must be inline). Code blocks: `<pre style="...">` + monospace. ASCII diagrams: `<pre>` blocks (monospace preserves alignment). Images: placeholder comments (manual upload). Self-check: no markdown residue, code blocks <20 lines (WeChat truncates), diagrams aligned.
-
-## Checklist
-
-- [ ] All `file:line` references re-verified against current source
-- [ ] 3-5 diagrams, each self-contained
-- [ ] Code blocks ≤15 lines; word count in project target range
-- [ ] Section template followed
-- [ ] `.md` saved to blog dir; `.html` generated via wechat-styles
-- [ ] WeChat preview: code blocks render, diagrams aligned, no markdown residue
-
-## Common Mistakes
-
-- **Line drift unchecked** — re-verify before publishing
-- **Diagram not self-contained** — needs surrounding prose to be readable
-- **Code block >15 lines** — WeChat truncates, readers skim
-- **Writing WHAT not WHY** — reader can read source for WHAT
-- **Trusting MEMORY.md line numbers verbatim** — always cross-check source
+完整研究与写作由 technical-writing 工作流编排；内容改写使用 wechat-tech-article，语言润色按需使用 humanizer-zh。

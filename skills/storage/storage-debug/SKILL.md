@@ -39,9 +39,11 @@ Block Layer → 请求合并/调度、discard 处理（blktrace、iostat）
 |---|---|---|
 | 应用 | `strace -f -e trace=file,ioctl` | 系统调用序列、参数 |
 | 文件系统 | `dmesg`、`mount`、`df`、`stat` | 挂载选项、空间统计、错误 |
-| Block Layer | `iostat -x`、`blktrace`、`blkdiscard` | 队列深度、IO 大小、discard 请求 |
+| Block Layer | `iostat -x`、`blktrace` | 队列深度、IO 大小、discard 请求 |
 | 存储栈 | `ceph daemon <osd> dump_ops_in_flight`、`ceph osd tree`、日志 | 请求处理、空间统计 |
 | 驱动/硬件 | `nvme list`、`smartctl -a`、`nvme id-ns` | 命名空间、discard 支持、磨损 |
+
+采集前确认工具开销与权限；`blkdiscard` 等改变数据的操作不作为观测工具。复现实验记录目标、影响范围、已有授权和恢复条件。
 
 ### 3. 假设表法
 
@@ -49,8 +51,8 @@ Block Layer → 请求合并/调度、discard 处理（blktrace、iostat）
 
 | 假设 | 预测的可观察结果 | 验证方法 | 结果 |
 |---|---|---|---|
-| 假设 A：ext4 没发 DISCARD | mount 选项无 discard，且 blktrace 无 discard 请求 | `mount` 查看选项 + `blktrace` 抓取 | 证实/推翻 |
-| 假设 B：RBD 不支持 discard | 下发后空间未释放，Store 无 trim 日志 | `ceph daemon` 查空间 + 日志 | 证实/推翻 |
+| 假设 A：本次操作未产生 DISCARD | 覆盖该操作完整窗口的块层抓取中没有 DISCARD | 核对在线 discard 与周期 fstrim 路径、抓取范围及丢事件情况 | 支持/反驳/证据不足 |
+| 假设 B：当前路径拒绝或忽略 discard | 当前版本能力检查或请求跟踪显示不支持或未处理 | 核对能力、请求返回与处理链；空间不降或缺日志不能单独证明不支持 | 支持/反驳/证据不足 |
 
 每个假设必须**可证伪**——能设计实验推翻它。
 
@@ -72,21 +74,23 @@ Block Layer → 请求合并/调度、discard 处理（blktrace、iostat）
 - Block Layer：<证据>
 - 存储栈：<证据>
 - 驱动/硬件：<证据>
-- 结论：问题在 <层>
+- 当前定位：<层或尚未定位；依据及缺口>
 
 ## 假设表
 | 假设 | 预测 | 验证方法 | 结果 |
 
 ## 根因
-- 结论：<一句话>
-- 证据链：<每步带出处>
+- 状态：<已确认 / 高可信假设 / 未定位>
+- 结论或候选解释：<一句话，不超出证据>
+- 支持证据与反证：<每步带出处；未排除的替代解释>
+- 下一步实验：<最能区分候选解释的实验、预测与判定条件>
 
 ## 证据附录
 - 命令、日志、源码位置
 
 ## 下一步
-- 根因确认？→ 交接 storage-design 出方案
-- 未确认？→ 交接 storage-architect 研究 / 继续缩小范围
+- 根因确认？→ 交接 design-document 出方案
+- 未确认？→ 按需使用 storage-code-analysis 补充源码证据 / 继续缩小范围
 ```
 
 ## Common Mistakes
@@ -96,3 +100,10 @@ Block Layer → 请求合并/调度、discard 处理（blktrace、iostat）
 - **一次改多个变量** — 无法归因
 - **不记录原始输出** — 证据丢失，无法复核
 - **把现象当根因** — "空间没释放"是现象，根因在某一层
+
+## 输入、交付与证据复用
+
+- 输入：故障现象、环境版本、日志与可用观测条件。
+- 交付与完成条件：排障记录：现象、假设及反证、根因状态、下一步实验。未定位也可交付记录，但不能宣称根因确认。
+- 输入不足时先完成有依据的部分，仅询问影响结论或执行的关键缺口。
+- 交接证据包含仓库、commit、文件或符号、结论与验证状态。同一版本且相关文件与运行条件未变化时复用已核验记录；版本、文件或关键条件变化时重核相关结论，不重复开展全部研究。
