@@ -15,7 +15,7 @@
 2. **Workflow 组合能力**：复杂任务由 Workflow 编排多个 Skill，而非把逻辑塞进单个 Skill。
 3. **Template 输出结构**：产出物结构由 Template 约束，Skill 负责方法与判断。
 4. **通用能力不绑定项目**：通用 Skill（如 design-document）不依赖任何项目专属术语。
-5. **项目专属规则入专属 Skill**：NeonSAN 专属规范归 neonsan-docs，不污染通用 Skill。
+5. **项目专属能力归属项目仓库**：NeonSAN 专属技能（neonsan-docs / ci-test-case / writing-neonsan-internals）由 personal-notes 仓库维护，本仓库不复制，避免污染通用 Skill。
 6. **优先基于事实和源码**：结论带出处（`file:line`、命令输出、文档链接），不凭记忆。
 7. **不确定必须标注**：推测 / 推断 / 观点必须明确标注，不冒充事实。
 8. **分布式存储优先一致性 / 并发 / 异常恢复**：Write / Discard / Snapshot / Clone / COW / Recovery 等生命周期必须主动检查。
@@ -39,3 +39,5 @@ docs/         仓库说明与开发指南
 ## 与 ~/.claude/skills/ 的关系
 
 本仓库是**受版本管理的副本**。`~/.claude/skills/` 是 Claude Code 实际加载的生效目录。改动本仓库后，需**手动同步**到 `~/.claude/skills/` 对应目录才生效。详见 `docs/usage.md`。
+
+NeonSAN 专属技能（neonsan-docs / ci-test-case / writing-neonsan-internals）不在本仓库，从 `personal-notes` 仓库的 `skills/` 同步到 `~/.claude/skills/`。

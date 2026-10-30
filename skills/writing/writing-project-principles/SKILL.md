@@ -34,7 +34,7 @@ description: >
 - 生产故障排查、空间未释放、性能异常定位 → `storage-debug`
 - 新功能方案设计、技术选型 → `design-document`
 - 公众号内容选题与表达 → `wechat-tech-article`；微信 HTML 排版 → `producing-tech-blog`
-- NeonSAN 专属原理规范 → `writing-neonsan-internals`
+- NeonSAN 专属原理规范 → `writing-neonsan-internals`（personal-notes 仓库维护）
 - 未经请求的代码修改、集群部署、远端变更或文章发布
 
 ## 模式路由
@@ -102,7 +102,7 @@ description: >
 | `wechat-tech-article` | 面向读者的公众号内容与表达 | 本技能完成原理内容后，按需再重组 |
 | `producing-tech-blog` | 微信 HTML 排版 | 只有用户要求排版时进入 |
 | `humanizer-zh` | 语言润色、去 AI 味 | 发布前按需调用 |
-| `writing-neonsan-internals` | NeonSAN 专属原理文档规范 | NeonSAN 任务优先用它 |
+| `writing-neonsan-internals` | NeonSAN 专属原理文档规范（personal-notes 仓库维护） | NeonSAN 任务优先用它 |
 
 协作技能存在时按职责分工，避免重复实现；不存在时完成本技能的核心工作，不虚构调用成功。只有用户明确要求公众号版本或发布排版时，才进入后续流程。
 

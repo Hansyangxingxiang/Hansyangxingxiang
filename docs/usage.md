@@ -15,13 +15,21 @@
 
 ```bash
 # 同步 design-document
-cp -r skills/storage/design-document ~/.claude/skills/design-document
-
-# 同步 neonsan-docs（注意：生效目录名与仓库内目录名一致）
-cp -r skills/storage/neonsan-docs ~/.claude/skills/neonsan-docs
+rsync -a -c --delete-delay --omit-dir-times skills/storage/design-document/ ~/.claude/skills/design-document/
 ```
 
-> 注意：`~/.claude/skills/` 中既有目录名（如 `writing-neonsan-design-docs`）与本仓库内目录名（`neonsan-docs`）可能不同。同步时以生效目录为准，或统一改名后同步。
+### NeonSAN 专属技能
+
+`neonsan-docs`、`ci-test-case`、`writing-neonsan-internals` 绑定 NeonSAN 项目，**不在本仓库**，由 `personal-notes` 仓库的 `skills/` 维护。这些技能同样需要同步到 `~/.claude/skills/`：
+
+```bash
+# 在 personal-notes 仓库根目录执行
+for n in neonsan-docs ci-test-case writing-neonsan-internals; do
+  rsync -a -c --delete-delay --omit-dir-times "skills/$n/" "$HOME/.claude/skills/$n/"
+done
+```
+
+目录名与 `SKILL.md` frontmatter 的 `name` 一致，运行时技能名不变。
 
 ### 触发方式
 
@@ -42,5 +50,5 @@ Skill 通过 description 自动触发。也可在对话中直接描述任务，C
 
 1. 用 `storage-code-analysis` 分析现有 Discard 处理路径（源码事实）。
 2. 用 `design-document` 产出 8 章节设计文档（含并发 / 一致性 / 兼容 / 测试）。
-3. 用 `neonsan-docs` 按 NeonSAN 规范归档落盘。
+3. 用 `neonsan-docs`（personal-notes 仓库维护）按 NeonSAN 规范归档落盘。
 4. 或直接走 `storage-feature-design` Workflow 端到端完成。

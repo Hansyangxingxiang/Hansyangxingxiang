@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-本仓库把分散在 `~/.claude/skills/` 的 8 个 Skill 整理为受版本管理的副本，并补充 Workflow（组合流水线）与 Template（输出结构），形成「Skills → Workflows → Templates → Claude Code 研发助手」的完整体系。
+本仓库把分散在 `~/.claude/skills/` 的 7 个通用 Skill 整理为受版本管理的副本，并补充 Workflow（组合流水线）与 Template（输出结构），形成「Skills → Workflows → Templates → Claude Code 研发助手」的完整体系。NeonSAN 专属技能由 `personal-notes` 仓库维护。
 
 ## 目录结构
 
@@ -28,11 +28,9 @@
 
 | Skill | 职责 |
 |---|---|
-| `ci-test-case` | 基于 NeonSAN CI 框架产出可评审的测试用例设计 |
 | `storage-code-analysis` | 深入读 Ceph/存储源码，区分"源码事实"与"推测" |
 | `storage-debug` | 存储/IO 问题排障，从现象反推根因 |
 | `design-document` | 通用研发技术设计文档（默认 8 章节，不依赖 NeonSAN） |
-| `neonsan-docs` | NeonSAN 文档规范与归档（原 writing-neonsan-design-docs） |
 
 ### writing/（技术写作）
 
@@ -42,11 +40,21 @@
 | `producing-tech-blog` | 排版成微信 HTML（`.md` + 内联 CSS） |
 | `humanizer-zh` | 去除文本 AI 生成痕迹 |
 
+### NeonSAN 专属技能（personal-notes 仓库）
+
+以下技能绑定 NeonSAN 项目，由 `personal-notes` 仓库的 `skills/` 维护，本仓库不复制：
+
+| Skill | 职责 |
+|---|---|
+| `neonsan-docs` | NeonSAN 文档规范与归档（原 writing-neonsan-design-docs） |
+| `ci-test-case` | 基于 NeonSAN CI 框架产出可评审的测试用例设计 |
+| `writing-neonsan-internals` | NeonSAN 技术原理系列写作 |
+
 ## Workflow 分类
 
 | Workflow | 用途 | 组合的 Skill |
 |---|---|---|
-| `storage-feature-design` | 功能设计端到端 | storage-code-analysis + design-document + neonsan-docs |
+| `storage-feature-design` | 功能设计端到端 | storage-code-analysis + design-document +（NeonSAN 归档）neonsan-docs |
 | `storage-bug-analysis` | 故障排障端到端 | storage-debug + storage-code-analysis + design-document |
 | `storage-performance-analysis` | 性能分析端到端 | storage-debug + storage-code-analysis + design-document |
 | `technical-writing` | 技术写作端到端 | wechat-tech-article + humanizer-zh + producing-tech-blog |

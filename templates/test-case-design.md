@@ -1,6 +1,6 @@
 # <功能/场景> 测试用例设计（<工单号>）
 
-> 本模板只提供结构骨架。设计原则、方法、判断标准见 `skills/storage/ci-test-case/SKILL.md`。
+> 本模板只提供结构骨架。设计原则、方法、判断标准见 `personal-notes` 仓库的 `skills/ci-test-case/SKILL.md`。
 
 | 项 | 内容 |
 |---|---|

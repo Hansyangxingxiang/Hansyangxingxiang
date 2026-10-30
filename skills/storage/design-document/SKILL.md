@@ -1,6 +1,6 @@
 ---
 name: design-document
-description: Use when writing a storage technical design doc — 新模块设计、功能改造、技术选型、架构评估，需要产出结构化中文方案文档时。Not for 源码分析（用 storage-code-analysis）或排障（用 storage-debug）。NeonSAN 落盘交接 neonsan-docs。
+description: Use when writing a storage technical design doc — 新模块设计、功能改造、技术选型、架构评估，需要产出结构化中文方案文档时。Not for 源码分析（用 storage-code-analysis）或排障（用 storage-debug）。NeonSAN 落盘交接 neonsan-docs（NeonSAN 专属，由 personal-notes 仓库维护）。
 ---
 
 # Design Document — 通用研发技术设计文档专家
@@ -19,7 +19,7 @@ description: Use when writing a storage technical design doc — 新模块设计
 - 架构评估
 - 需要产出结构化中文方案文档
 
-Not for 源码分析（storage-code-analysis）或排障（storage-debug）。NeonSAN 落盘交接 neonsan-docs。
+Not for 源码分析（storage-code-analysis）或排障（storage-debug）。NeonSAN 落盘交接 neonsan-docs（NeonSAN 专属，由 personal-notes 仓库维护）。
 
 ## 核心方法（先分析，再设计）
 
@@ -95,7 +95,7 @@ Not for 源码分析（storage-code-analysis）或排障（storage-debug）。Ne
 
 - **storage-code-analysis**：源码 / 调用链 / 数据流分析 → 现状分析 → design-document → 设计方案。
 - **storage-debug**：故障 → 根因 → design-document → 修复设计。
-- **neonsan-docs**：设计内容按 NeonSAN 规范整理 / 归档 / 落盘。
+- **neonsan-docs**（NeonSAN 专属，由 personal-notes 仓库维护）：设计内容按 NeonSAN 规范整理 / 归档 / 落盘。
 - 明确：design-document **不依赖 NeonSAN 专属术语**，是通用研发设计文档专家。
 
 ## Common Mistakes

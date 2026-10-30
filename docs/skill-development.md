@@ -4,7 +4,7 @@
 
 1. 在 `skills/<category>/<skill-name>/` 下创建 `SKILL.md`。
 2. frontmatter 必须含 `name`（唯一标识）与 `description`（触发条件 + 不适用场景）。
-3. 遵循仓库核心原则：单一能力、不绑定项目、基于事实、不确定标注。
+3. 遵循仓库核心原则：单一能力、不绑定项目、基于事实、不确定标注。项目专属能力不放本仓库，应放到对应项目仓库（如 `personal-notes`），`name` 与目录名仍须一致。
 4. 若产出物有固定结构，在 `templates/` 提供对应 Template。
 5. 若被 Workflow 使用，更新对应 `workflows/*/WORKFLOW.md` 的 Skill 引用。
 
