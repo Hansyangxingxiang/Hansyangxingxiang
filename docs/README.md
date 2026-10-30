@@ -30,13 +30,14 @@
 |---|---|
 | `storage-code-analysis` | 深入读 Ceph/存储源码，区分"源码事实"与"推测" |
 | `storage-debug` | 存储/IO 问题排障，从现象反推根因 |
-| `design-document` | 通用研发技术设计文档（默认 8 章节，不依赖 NeonSAN） |
+| `design-document` | 通用研发技术设计文档（轻量 / 完整模式，不依赖 NeonSAN） |
 
 ### writing/（技术写作）
 
 | Skill | 职责 |
 |---|---|
-| `wechat-tech-article` | 公众号技术文章选题 / 结构 / 草稿 |
+| `writing-project-principles` | 项目原理写作 / 系列规划 / 技术评审与一致性检查 |
+| `wechat-tech-article` | 公众号选题 / 标题 / 读者表达 |
 | `producing-tech-blog` | 排版成微信 HTML（`.md` + 内联 CSS） |
 | `humanizer-zh` | 去除文本 AI 生成痕迹 |
 
@@ -57,7 +58,7 @@
 | `storage-feature-design` | 功能设计端到端 | storage-code-analysis + design-document +（NeonSAN 归档）neonsan-docs |
 | `storage-bug-analysis` | 故障排障端到端 | storage-debug + storage-code-analysis + design-document |
 | `storage-performance-analysis` | 性能分析端到端 | storage-debug + storage-code-analysis + design-document |
-| `technical-writing` | 技术写作端到端 | wechat-tech-article + humanizer-zh + producing-tech-blog |
+| `technical-writing` | 技术写作端到端 | 按任务选择 writing-project-principles / wechat-tech-article；润色与 HTML 按需 |
 
 ## Template 分类
 
@@ -66,7 +67,7 @@
 | `design-document.md` | 设计文档（8 章节骨架） |
 | `bug-analysis.md` | Bug/事故分析归档（8 槽） |
 | `performance-analysis.md` | 性能分析报告 |
-| `technical-article.md` | 技术文章（10 节结构） |
+| `technical-article.md` | 技术文章（长文可选骨架，按主题调整） |
 
 ## 如何使用
 

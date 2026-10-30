@@ -44,6 +44,13 @@ Skill 通过 description 自动触发。也可在对话中直接描述任务，C
 | 分析一个性能问题 | `storage-performance-analysis` |
 | 写一篇技术文章 | `technical-writing` |
 
+## 写作任务入口
+
+- 项目原理、源码证据、系列规划、技术评审或系列一致性：`writing-project-principles`。
+- 公众号选题、标题或已有正文的读者表达调整：`wechat-tech-article`。
+- 只润色已有文本：`humanizer-zh`；只生成微信 HTML：`producing-tech-blog`。
+- 公众号原理文章先完成机制论证，再按需处理表达和排版；博客或系列规划不自动生成 HTML。
+
 ## 使用示例
 
 以「设计分布式块存储 Trim/Discard 功能」为例：
