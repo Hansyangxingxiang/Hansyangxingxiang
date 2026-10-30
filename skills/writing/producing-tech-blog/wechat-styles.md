@@ -21,13 +21,13 @@ WeChat strips `<style>` tags and external CSS, so every style must be inlined vi
 
 1. Convert each `.md` element one-by-one, applying the table's style
 2. ASCII diagram code blocks use the "ASCII diagram" row (tighter `line-height:1.4`)
-3. Code blocks >20 lines: split, or note "完整代码见仓库"
+3. Prefer concise, semantically complete code excerpts. Preserve full source; do not silently truncate code to meet a line count.
 4. No `<img>` directly — use placeholder comments; upload manually when publishing
-5. Output a full HTML document (with `<html><body>`) so it can be pasted whole into the WeChat editor
+5. Output a full HTML document for local inspection. The WeChat paste/import path and resulting rendering require client preview.
 
 ## WeChat Gotchas
 
-- Code blocks >~20 lines get truncated on mobile — fold or split them
+- Long code blocks may be difficult to read on mobile; verify the actual client rendering before choosing a display adjustment
 - ASCII diagrams MUST use monospace + no-wrap, or alignment breaks
 - WeChat does not render `<table>` styles directly — convert tables to HTML lists or screenshots
 - In-body links are not clickable (only the 文末"阅读原文" link jumps) — put important links at the end
