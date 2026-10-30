@@ -5,10 +5,9 @@ description: >
   基于源码、官方文档、论文与实验，围绕问题、架构、机制、关键流程和设计取舍组织文章，
   并明确区分源码事实、官方设计、实验观察与作者推断。当用户要求"规划技术原理系列""写一篇技术原理/
   架构解析/工作机制文章""评审技术文章""检查系列术语与结论一致性"，或要把 Mooncake、KV Cache、
-  分布式存储项目的实现讲成可长期阅读的原理内容时使用。只要用户的目标是把项目原理讲清楚，
-  而不只是查代码或排障，就应使用本技能。不用于逐函数源码阅读笔记（用 storage-code-analysis）、
-  生产故障排查（用 storage-debug）、方案设计（用 design-document）、公众号排版
-  （用 wechat-tech-article / producing-tech-blog）。
+  分布式存储项目的实现讲成可长期阅读的原理内容时使用。当重点是项目机制与证据论证，而非仅调整公众号表达时使用本技能。不用于逐函数源码阅读笔记（用 storage-code-analysis）、
+  生产故障排查（用 storage-debug）、方案设计（用 design-document）、公众号选题与表达调整
+  （用 wechat-tech-article）、微信 HTML 排版（用 producing-tech-blog）。
 ---
 
 # Writing Project Principles — 项目技术原理写作
@@ -33,7 +32,7 @@ description: >
 - 以逐函数讲解为主的源码阅读笔记 → `storage-code-analysis`
 - 生产故障排查、空间未释放、性能异常定位 → `storage-debug`
 - 新功能方案设计、技术选型 → `design-document`
-- 公众号内容选题与表达 → `wechat-tech-article`；微信 HTML 排版 → `producing-tech-blog`
+- 仅优化公众号选题、标题和读者表达 → `wechat-tech-article`；微信 HTML 排版 → `producing-tech-blog`。公众号原理文章仍由本技能负责机制与证据，只在需要时交接表达调整。
 - NeonSAN 专属原理规范 → `writing-neonsan-internals`（personal-notes 仓库维护）
 - 未经请求的代码修改、集群部署、远端变更或文章发布
 
@@ -92,14 +91,14 @@ description: >
 
 写作或规划前，先确认项目，再读取 `references/<project>.md`。当前首个配置是 `references/mooncake.md`，内容包括系列名、范围、建议篇目、实验条件与声明边界。
 
-项目配置是**规划约束**，不是未经核实的实现事实。接入新项目时复制同样的结构新建参考文件，主技能不改。
+项目配置是**规划约束**，不是未经核实的实现事实或当前环境状态。项目无专用配置时，按已有模板记录本次项目与版本即可，不因缺少配置阻塞写作；仅在用户要求维护可复用配置时新建参考文件。已有配置的目录和实验能力也须核实，不静默部署或覆盖旧稿。
 
 ## 与已有技能协作
 
 | 技能 | 谁做什么 | 交接点 |
 |---|---|---|
 | `storage-code-analysis` | 深入读源码、下调用链结论 | 其分析结果作为本技能的证据输入 |
-| `wechat-tech-article` | 面向读者的公众号内容与表达 | 本技能完成原理内容后，按需再重组 |
+| `wechat-tech-article` | 面向读者的公众号内容与表达 | 本技能完成原理内容后，按需调整标题与表达，保留机制、证据和限定，避免重复研究或重写全文 |
 | `producing-tech-blog` | 微信 HTML 排版 | 只有用户要求排版时进入 |
 | `humanizer-zh` | 语言润色、去 AI 味 | 发布前按需调用 |
 | `writing-neonsan-internals` | NeonSAN 专属原理文档规范（personal-notes 仓库维护） | NeonSAN 任务优先用它 |

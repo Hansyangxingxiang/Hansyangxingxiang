@@ -1,6 +1,6 @@
 ---
 name: wechat-tech-article
-description: Use when writing a WeChat tech article for storage engineers — 需要选题、定标题、组织文章结构、把握技术深度、做发布前检查，产出有个人风格的内容草稿时。Not for 排版（用 producing-tech-blog）或去 AI 味（用 humanizer-zh）。
+description: Use when writing a WeChat tech article for storage engineers — 需要选题、定标题、组织文章结构、调整读者表达、做内容检查，产出有个人风格的内容草稿时。项目机制、源码证据与原理系列规划优先用 writing-project-principles；仅调整公众号表达时用本技能。Not for HTML 排版（用 producing-tech-blog）或仅语言润色（用 humanizer-zh）。
 ---
 
 # WeChat Tech Article — 内容质量与风格
@@ -8,6 +8,8 @@ description: Use when writing a WeChat tech article for storage engineers — �
 ## Overview
 
 本 skill 管**内容质量与风格**，不含排版。产出：内容草稿 + 检查结果。排版（微信 HTML）交接 producing-tech-blog，去 AI 味交接 humanizer-zh。
+
+收到原理文章任务时，先区分机制论证与公众号表达：机制、证据及系列规划由 writing-project-principles 主导；已有技术内容只需标题或读者表达时直接在本技能处理，保留上游证据和技术限定，不重复研究。
 
 核心原则：**技术专家的"翻译官"**——不降级技术深度，只重新组织，让读者能跟上、能记住、能带走。
 
