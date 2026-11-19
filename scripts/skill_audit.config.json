@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "roots": {
+    "hans": "Hansyangxingxiang",
+    "personal": "personal-notes",
+    "workbuddy": "workbuddy-agents"
+  },
+  "generated": {
+    "shared/references/method-and-evidence.md": [
+      "skills/storage/design-document",
+      "skills/storage/storage-code-analysis",
+      "skills/storage/storage-concurrency-analysis",
+      "skills/storage/storage-debug",
+      "skills/writing/humanizer-zh",
+      "skills/writing/producing-tech-blog",
+      "skills/writing/wechat-tech-article",
+      "skills/writing/writing-project-principles",
+      "skills/testing/test-case-design"
+    ]
+  },
+  "generated_personal": {
+    "shared/references/method-and-evidence.md": [
+      "skills/ci-test-case"
+    ]
+  },
+  "duplicate_allowlist": [
+    "storage-debug",
+    "storage-concurrency-analysis",
+    "storage-performance-analysis"
+  ],
+  "skill_name_prefixes": [
+    "storage-",
+    "writing-",
+    "wechat-",
+    "producing-",
+    "humanizer-",
+    "design-document",
+    "ci-test-case",
+    "neonsan-docs",
+    "test-case-design"
+  ],
+  "size": {
+    "skill_warn": 300,
+    "reference_warn": 400
+  },
+  "desensitize": {
+    "block_patterns": [
+      "\\bsk-[A-Za-z0-9]{16,}\\b",
+      "\\b(?:10|172\\.(?:1[6-9]|2\\d|3[01])|192\\.168)\\.\\d{1,3}\\.\\d{1,3}\\b",
+      "git\\.yunify\\.com",
+      "/builder_img",
+      "/home/[A-Za-z0-9_.-]+",
+      "\\bstore_ip\\b",
+      "\\bstore_log\\b",
+      "\\bZooKeeper\\b",
+      "ZK\\+MySQL",
+      "\\bdispatcher\\b",
+      "\\bneonstore\\b",
+      "\\bqbd\\b",
+      "\\bQBDDevice\\b",
+      "云易捷"
+    ],
+    "warn_terms": [
+      "NeonSAN",
+      "neonsan"
+    ],
+    "allow_path_prefixes": [
+      "docs/optimization/"
+    ]
+  },
+  "required_workflow_sections": [
+    "目的",
+    "适用场景",
+    "阶段流水线",
+    "Skill",
+    "产出物",
+    "检查清单"
+  ]
+}
