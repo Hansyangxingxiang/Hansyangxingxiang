@@ -19,9 +19,23 @@ description: 将已有 Markdown 技术文章转换为适合微信公众号的内
 4. 代码按完整语义展示；过长时优先调整展示方式，需要拆分或省略时保留完整源稿并说明。图使用等宽字体并检查窄屏；表格转为列表时保留行列对应关系。
 5. 图片保留来源与说明；未上传微信的图片记录待上传项。无法支持的公式或图示明确标注，不将空占位称为转换完成。
 
+## 可选工具（scripts/）
+
+仅在当前环境有 Python 3.8+ 时使用；脚本不可用不阻塞手工转换。
+
+```bash
+python3 scripts/md2wx.py article.md -o article.html --accent "#1677FF" --font-size 16
+python3 scripts/blog_lint.py article.md --deny deny-words.txt
+```
+
+- `md2wx.py` 生成内联 CSS HTML，并在输出旁写 `article.report.json`；只做排版转换，不改写正文。
+- `blog_lint.py` 做编码、敏感词、结构与发布前体检；P0/P1 必须修，P2 按需处理。
+- 工具是辅助证据，不是预览证明；微信客户端预览仍需单独记录。
+
 ## 验收与交付
 
 - 对照源稿检查标题、段落、数字、代码、图表信息及引用完整性，确认转义正确、标签闭合、CSS 内联且无外部脚本依赖。
+- 技术审校逐条过 `references/TECH_REVIEW_CHECKLIST.md`；配图与截图脱敏参照 `references/BLOG_IMAGE_GUIDE.md`。
 - 有浏览器时检查窄屏、长代码与图表；实际微信客户端预览单独记录。静态检查不能证明微信显示正常。
 - 交付源稿路径、HTML 路径和检查结果；区分已验证、待人工预览、待上传和受阻事项。
 - 无法生成或检查某元素时交付已有结果与具体缺口，不声称全部通过。
