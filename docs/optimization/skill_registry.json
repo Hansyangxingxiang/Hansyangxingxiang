@@ -1,0 +1,380 @@
+{
+  "commands": [
+    {
+      "name": "storage-bug-analysis",
+      "path": "commands/storage-bug-analysis.md",
+      "sha256": "d1b81bf2fdc93f63c6ca73b54ba1f9dce82249c49937b8ab7ba9fb5525e9e980",
+      "workflow": "storage-bug-analysis"
+    },
+    {
+      "name": "storage-feature-design",
+      "path": "commands/storage-feature-design.md",
+      "sha256": "045438104d0f8a630bb8951c1a9e54423cb398990288261a677c691106d8e608",
+      "workflow": "storage-feature-design"
+    },
+    {
+      "name": "storage-performance-analysis",
+      "path": "commands/storage-performance-analysis.md",
+      "sha256": "e6e407d8458f48ea04327f40819a1040394a9d45bc19e67bebccf16272fc80d8",
+      "workflow": "storage-performance-analysis"
+    },
+    {
+      "name": "technical-writing",
+      "path": "commands/technical-writing.md",
+      "sha256": "8ce1ea0a0caae67ce87d5943d01fb897be95ef08e6df5ecf50cc55f99cb5afc7",
+      "workflow": "technical-writing"
+    }
+  ],
+  "duplicates": [
+    {
+      "classification": "intentional-divergent",
+      "name": "storage-concurrency-analysis",
+      "repos": [
+        "hans",
+        "workbuddy"
+      ]
+    },
+    {
+      "classification": "intentional-divergent",
+      "name": "storage-debug",
+      "repos": [
+        "hans",
+        "workbuddy"
+      ]
+    }
+  ],
+  "generated_file_map": {
+    "shared/references/method-and-evidence.md": [
+      "skills/storage/design-document",
+      "skills/storage/storage-code-analysis",
+      "skills/storage/storage-concurrency-analysis",
+      "skills/storage/storage-debug",
+      "skills/writing/humanizer-zh",
+      "skills/writing/producing-tech-blog",
+      "skills/writing/wechat-tech-article",
+      "skills/writing/writing-project-principles",
+      "skills/testing/test-case-design"
+    ]
+  },
+  "generated_from": [
+    "SKILL.md frontmatter",
+    "directory layout",
+    "WORKFLOW.md",
+    "commands/*.md"
+  ],
+  "roots": [
+    "Hansyangxingxiang",
+    "personal-notes",
+    "workbuddy-agents",
+    "~/.claude/skills"
+  ],
+  "schema_version": 1,
+  "skills": [
+    {
+      "authority": "canonical",
+      "category": "storage",
+      "description_sha256": "b3a0ea78a8afbcec72099b602b210f825f219846eab60ad1c8f9b5e52c43b26e",
+      "files": {
+        "SKILL.md": "308590761ac24de5e73cfbae96d5c5a413840005788a8630e3399536b52839b1",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "design-document",
+      "path": "skills/storage/design-document",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "storage",
+      "description_sha256": "115d540e99de9878511a1778d915accffbab0f61ea27b4872bd051c1b5248b89",
+      "files": {
+        "SKILL.md": "0ae384da7944e113486086919eab83b3116ac35c537e1640602fab0a705cc7a0",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "storage-code-analysis",
+      "path": "skills/storage/storage-code-analysis",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "storage",
+      "description_sha256": "ba6ce14806e7ca31524920be3ed2f17ccccf997ba877d011383234b4ed2365a5",
+      "files": {
+        "SKILL.md": "8a7f257d5028a3bbbc44377c5ccd7098108d54eb6db47ecd695b7123862cddf1",
+        "references/framework.md": "0e6ea197b15fd4332891f335f948d438eab7e661a89cb68ced3c930f88e7afef",
+        "references/mermaid-templates.md": "111ab5282a95e5992d34fd08dce00cc3aa777c5d4d5a01861912b802aedff7df",
+        "references/scenarios.md": "8dd4dc9b7a91c5f23bbeff3ec5bd6a6c753c27055c756c0830d6060071d58442",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a",
+        "references/verification.md": "905e940a404b341fc58bb5607219d565ee8df00325ca4492f0693abe36a77a48"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "storage-concurrency-analysis",
+      "path": "skills/storage/storage-concurrency-analysis",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "storage",
+      "description_sha256": "55f562c2b13345ac8892aff35f6aea2e365084694f59b7504f2a7d0709b0e3b6",
+      "files": {
+        "SKILL.md": "28f54d084cd8a49903826246f85a71701129e8d0c36d015dadddbd246079c394",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "storage-debug",
+      "path": "skills/storage/storage-debug",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "testing",
+      "description_sha256": "242fd38cbe84c5b1f40727f6505678e1f5933853e660d44ab60e12852b87a521",
+      "files": {
+        "SKILL.md": "eca43c7ecc111a4ab5caf5a3c0dbb50bb0b4e963ab07ecd6d83bcc09b29c93aa",
+        "references/case-template.md": "3f200de2667024d8c23a64a11c593fc2f9c2b959b6d7e359fa84e134b52b72f2",
+        "references/implementation-classes.md": "8d1e5fe28b4384d462b2fce87ddf05a8feebe110f796eaa391650d665446c771",
+        "references/scenario-checklist.md": "b6aef8dfc564d1d9bfa7d685aa21196a5cc85373327dece5a821c710df4f16cd",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "test-case-design",
+      "path": "skills/testing/test-case-design",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "writing",
+      "description_sha256": "fb76c0892617c7e171726d4069622a90016958d045ad7321cc2199e99fa51921",
+      "files": {
+        ".gitignore": "e52aac198acd71945e1730f45cafba41fffda4e2a0d7d6a38175880aae8eabea",
+        "LICENSE": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7",
+        "README.md": "60cd3ed8b4753837ca8f8fcebf6076a38591a269d91ea1791aa7448e5a1b1b58",
+        "SKILL.md": "56e6df49a3e0cb3e5df5fa8bf5653f68c8f63cfb2123ed21008e16e19c8190d7",
+        "references/patterns-catalog.md": "2755419dfee056fabf23d6d17f9c3ec35728421034adbc3a37c6ad8d1ea8a5b5",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a",
+        "scripts/check_style.py": "093695c28a5b65ad0165824b81b2735cab3a8e1e696710ac780a181097264216"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "humanizer-zh",
+      "path": "skills/writing/humanizer-zh",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "writing",
+      "description_sha256": "cdb0025aaf0279b4ebd22b00deb016c1dece06422173ccb522e9b51a21c3c720",
+      "files": {
+        "SKILL.md": "1393e05ce2160255f1ea9d0844fc74560e4830a53abcf530287730a6e9204d1d",
+        "project-conventions.template.md": "65f8a7d0c2cec2dc93cfec8a17f98d1afa94a034e87a9694eeb88b6543ac4c2d",
+        "references/BLOG_IMAGE_GUIDE.md": "519b14a076bfd1e616d7a2b01d083784ccac44baf74d1799ceec288c6e4072f0",
+        "references/TECH_REVIEW_CHECKLIST.md": "978392457b642e9c8b8453a0bfe833d49ad0f23bed1be4bd3032949170ba4020",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a",
+        "scripts/blog_lint.py": "4b32ddc9bdd75895dd84706ca376597be35039a6180f60923f91d6ad7f69924f",
+        "scripts/md2wx.py": "f6aff77dad948b562aea8bd4eb819a32ae900f90389dbe8781ee6fbcce1a2c71",
+        "wechat-styles.md": "1b9db1c8a6a8ed24b2e1abaa44c74b45fa2eee323f1b1ed6f7356694fcfb3d63"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "producing-tech-blog",
+      "path": "skills/writing/producing-tech-blog",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "writing",
+      "description_sha256": "2bd4fe517f8caab1f7d200809d148831023136a27de8693cf9ef8f0dfef5d401",
+      "files": {
+        "SKILL.md": "cfe3b988d057048f335e416250b4e45553ec697b758e5ea3376ec13902950521",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "wechat-tech-article",
+      "path": "skills/writing/wechat-tech-article",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "writing",
+      "description_sha256": "7d9d280deca841f44a8a3043fbd832538e959cb7ad700263335048ce28ac8e58",
+      "files": {
+        "SKILL.md": "4331bc8dacd6b35ad1609fa9e69e9bc47895e9033fa33e20cdd24499c49ca72c",
+        "assets/article-template.md": "b9cd6da17a6974b6a5c886992904f631159d41ae1bf3a7e1a9cec750bb2aa4fd",
+        "assets/series-plan-template.md": "d8c2482d9fd3f8fe087a9d296b0e77a9ba3d71c309b39153d100f5fa4ed5b78b",
+        "references/article-structure.md": "4bd8a89254c320ae4b801ca10c8bffa5665be876ab7affbb6bbcf448dccb55a6",
+        "references/diagram-guidelines.md": "7bf0b60c0393e63d1c7aa083da6a411d0e8f7d07ca88850aead08cb44efe1547",
+        "references/evidence-rules.md": "7f957d2306b1c187d67f0a25b140927be0b229abcaa7c938b18631abec49167f",
+        "references/mooncake.md": "9ddceb3f614daedc57de8eed3e80586122a4d2f721bf0201038314d8f0550d39",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "writing-project-principles",
+      "path": "skills/writing/writing-project-principles",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "project",
+      "description_sha256": "00112ecf4d4c6e6d68a17c716ea181833c04f9d8cedb93a753dffed718be7f06",
+      "files": {
+        "SKILL.md": "96360eea91bc25520c02fdf76027a68a20600efebb244b1a6f22367875fe3cc1",
+        "references/case-template.md": "573f68543282607fc7c58ea05a4b338cb9382d6755f9a99c85245b4c8013ef4d",
+        "references/ci-navigation.md": "b836f31a980366637f569387716aac00e052312ffad7bc444e3390eeb7336576",
+        "references/scenario-checklist.md": "2f57e3826f77e7c44d0c7c85d72536847c8aac98e151e8ff5867ea93acd60a2b",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "ci-test-case",
+      "path": "skills/ci-test-case",
+      "repo": "personal",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "project",
+      "description_sha256": "5eb6597c8e5b0e0380b9db33f81d0e0d2d2e6404568a06852e9984ce3a60c6d3",
+      "files": {
+        "SKILL.md": "65437e5ad996df28750c56fc66164f01f8a9610825f7a5c518b487968b038b55",
+        "references/project-layout.md": "5aab6d7121f0c09b277c52241cfbb99fdc52dfcc12d3e866b2fc9315264dda0d"
+      },
+      "generated_files": [],
+      "name": "neonsan-docs",
+      "path": "skills/neonsan-docs",
+      "repo": "personal",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "project",
+      "description_sha256": "22e06b56b8849a842d84432e0760a99aaa1ca24eeac67b5ca74adb9123359f35",
+      "files": {
+        "SKILL.md": "5e897f04cb3e40d11354592b7c58ec29b32c8e42c2611a97ca876a951ded303a",
+        "references/figures.md": "c390229d5f78ae044e2fd3f90718a21cc3ec6393a68e7b3003dd61767cce1366",
+        "references/templates.md": "118e40ed4dcba1ae7c29e0b94f6f34b05343d9af7f1921e614c62281d003453c"
+      },
+      "generated_files": [],
+      "name": "writing-neonsan-internals",
+      "path": "skills/writing-neonsan-internals",
+      "repo": "personal",
+      "scope": "claude"
+    }
+  ],
+  "templates": [
+    {
+      "cited_by": [
+        "docs/README.md",
+        "workflows/storage-bug-analysis/WORKFLOW.md"
+      ],
+      "path": "templates/bug-analysis.md",
+      "sha256": "ac35bf59833f3d32ce5f08bab651eccd5441572f889b4166ae337c14a718dcb7"
+    },
+    {
+      "cited_by": [
+        "docs/README.md",
+        "workflows/storage-feature-design/WORKFLOW.md"
+      ],
+      "path": "templates/design-document.md",
+      "sha256": "0834e10d3d6d8dc03f6945e8ea190e06629adb86dd5fe190fb66de2e1d724ac3"
+    },
+    {
+      "cited_by": [
+        "docs/README.md",
+        "workflows/storage-performance-analysis/WORKFLOW.md"
+      ],
+      "path": "templates/performance-analysis.md",
+      "sha256": "224aefd797b9242e46ed4ddc886c3d798b6fe790a02680924d8465fc2b350254"
+    },
+    {
+      "cited_by": [
+        "docs/README.md",
+        "workflows/technical-writing/WORKFLOW.md"
+      ],
+      "path": "templates/technical-article.md",
+      "sha256": "a76f1331aeb65fd69c6c02848681ef6b7fec4daf8928e45d73af3ec8c1ee524c"
+    },
+    {
+      "cited_by": [
+        "docs/README.md"
+      ],
+      "path": "templates/test-case-design.md",
+      "sha256": "698b2893bed93cf37b790f88ab9560386d8f32a64feb7ec0567723d6c3231c9a"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "storage-bug-analysis",
+      "path": "workflows/storage-bug-analysis/WORKFLOW.md",
+      "sha256": "33d5c0f0f581ac2ba3eb6ff24f48187316685fb842cdd65c03d36b7fe04ff0ae",
+      "skills": [
+        "design-document",
+        "storage-code-analysis",
+        "storage-concurrency-analysis",
+        "storage-debug"
+      ]
+    },
+    {
+      "name": "storage-feature-design",
+      "path": "workflows/storage-feature-design/WORKFLOW.md",
+      "sha256": "d406fc5a1baa921bb6a2c5cb4c8d41dea52add06b8bab7d242fc6b7da7c1734d",
+      "skills": [
+        "design-document",
+        "neonsan-docs",
+        "storage-code-analysis",
+        "storage-concurrency-analysis"
+      ]
+    },
+    {
+      "name": "storage-performance-analysis",
+      "path": "workflows/storage-performance-analysis/WORKFLOW.md",
+      "sha256": "36f9f4898335d7f2ed9ba54603ed2cce709330644bf6631ce00fac8d7ecec6b6",
+      "skills": [
+        "design-document",
+        "storage-code-analysis",
+        "storage-debug"
+      ]
+    },
+    {
+      "name": "technical-writing",
+      "path": "workflows/technical-writing/WORKFLOW.md",
+      "sha256": "5fdb9fba1728bf8761593bb99bcb76053678364c85377469603f1303777909a4",
+      "skills": [
+        "design-document",
+        "humanizer-zh",
+        "producing-tech-blog",
+        "storage-code-analysis",
+        "storage-debug",
+        "wechat-tech-article",
+        "writing-neonsan-internals",
+        "writing-project-principles"
+      ]
+    }
+  ]
+}
