@@ -35,6 +35,42 @@ done
 
 Skill 通过 description 自动触发。也可在对话中直接描述任务，Claude Code 会匹配对应 Skill。
 
+## 存储分析入口
+
+- 并发 / 竞态 / 数据安全（是否丢数据、是否数据复活、谁负责保护、如何验证）：`storage-concurrency-analysis`。
+- 只需读懂源码或调用链：`storage-code-analysis`。
+- 已有具体故障现象要反推根因：`storage-debug`。
+- 要为并发保护机制写正式设计文档：`design-document` 主导，并发结论由 `storage-concurrency-analysis` 提供。
+
+```bash
+# 同步 storage-concurrency-analysis
+rsync -a -c --delete-delay --omit-dir-times skills/storage/storage-concurrency-analysis/ ~/.claude/skills/storage-concurrency-analysis/
+```
+
+## 博客工具（可选）
+
+三个脚本只用 Python 3.8+ 标准库，脚本不可用不阻塞手工排版与人工润色。
+
+```bash
+cd skills/writing/producing-tech-blog
+python3 scripts/md2wx.py article.md -o article.html --accent "#1677FF" --font-size 16
+python3 scripts/blog_lint.py article.md --deny deny-words.txt
+
+cd ../humanizer-zh
+python3 scripts/check_style.py draft.md
+```
+
+- `md2wx.py` 只做排版转换，并在输出旁写 `article.report.json`；不修改源 Markdown。
+- `blog_lint.py` 做编码、敏感词、结构与发布前体检；退出码 0 仅表示「可发布」。
+- `check_style.py` 只报告硬禁令与风险位置，不自动改写；WARN 需人工判断。
+- 脚本是辅助证据，不等于微信客户端预览，预览仍需单独记录。
+
+```bash
+# 同步博客工具相关技能
+rsync -a -c --delete-delay --omit-dir-times skills/writing/producing-tech-blog/ ~/.claude/skills/producing-tech-blog/
+rsync -a -c --delete-delay --omit-dir-times skills/writing/humanizer-zh/ ~/.claude/skills/humanizer-zh/
+```
+
 ## 按任务选择 Workflow
 
 | 任务 | 用哪个 Workflow |

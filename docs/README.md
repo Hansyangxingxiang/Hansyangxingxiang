@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-本仓库把分散在 `~/.claude/skills/` 的 7 个通用 Skill 整理为受版本管理的副本，并补充 Workflow（组合流水线）与 Template（输出结构），形成「Skills → Workflows → Templates → Claude Code 研发助手」的完整体系。NeonSAN 专属技能由 `personal-notes` 仓库维护。
+本仓库把分散在 `~/.claude/skills/` 的 8 个通用 Skill 整理为受版本管理的副本，并补充 Workflow（组合流水线）与 Template（输出结构），形成「Skills → Workflows → Templates → Claude Code 研发助手」的完整体系。NeonSAN 专属技能由 `personal-notes` 仓库维护。
 
 ## 目录结构
 
@@ -31,6 +31,7 @@
 | `storage-code-analysis` | 深入读 Ceph/存储源码，区分"源码事实"与"推测" |
 | `storage-debug` | 存储/IO 问题排障，从现象反推根因 |
 | `design-document` | 通用研发技术设计文档（轻量 / 完整模式，不依赖 NeonSAN） |
+| `storage-concurrency-analysis` | 存储并发、竞态与一致性分析（14 类场景、11 维框架） |
 
 ### writing/（技术写作）
 
@@ -38,8 +39,8 @@
 |---|---|
 | `writing-project-principles` | 项目原理写作 / 系列规划 / 技术评审与一致性检查 |
 | `wechat-tech-article` | 公众号选题 / 标题 / 读者表达 |
-| `producing-tech-blog` | 排版成微信 HTML（`.md` + 内联 CSS） |
-| `humanizer-zh` | 去除文本 AI 生成痕迹 |
+| `producing-tech-blog` | 排版成微信 HTML（`.md` + 内联 CSS）；可选 md2wx / blog_lint 脚本 |
+| `humanizer-zh` | 去除文本 AI 生成痕迹；可选 check_style 脚本 |
 
 ### NeonSAN 专属技能（personal-notes 仓库）
 
