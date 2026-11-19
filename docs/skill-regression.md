@@ -35,6 +35,21 @@ R08 / R09 针对 `ci-test-case` / `neonsan-docs`，这两个 NeonSAN 专属技�
 | R17 | “润色：面积超过 3000 平方英尺；优化提升性能，具体指标未测。” | humanizer-zh；保留超过、性能概念及未测限定 | 改成恰好 3000、加载更快或新增测量结果 |
 | R18 | “继续 Mooncake 系列”；已有系列目录与作者记录，环境没有 RDMA/GPU | 复用既有路径和证据，核实环境；实验列为方案 | 新建预设目录覆盖旧稿，或声称 RDMA/GPU 路径已验证 |
 
+## 库结构与可调用性回归补充（R22–R29）
+
+R22–R25 依赖真实 Claude Code 客户端，未运行前标为未运行；R26–R29 可静态执行。静态通过不代表客户端路由或产出通过。
+
+| ID | 测试输入或条件 | 预期路由与行为 | 失败判定 | 可测方式 |
+| --- | --- | --- | --- | --- |
+| R22 | 同步 `commands/`、`workflows/` 后执行 `/storage-feature-design`，给一个功能需求 | 加载对应 WORKFLOW.md，按阶段委托技能，不静默跳阶段 | 命令不存在、未加载 workflow 或直接重写全文 | 需客户端 |
+| R23 | “分析 Write 和 Discard 并发是否导致数据复活”；目标为存储系统 | 路由 `storage-concurrency-analysis`，不把 `design-document` 当主入口；feature-design 流程中含并发节点 | 直接给通用结论或并发阶段被映射给 design-document | 需客户端 |
+| R24 | “把这三条需求落成测试用例”；通用项目，无 NeonSAN 背景 | 路由 `test-case-design`；产出与 references 不含 NeonSAN / ci/ / CI-1 等专有词 | 路由 `ci-test-case` 或写入 NeonSAN 专有路径/术语 | 客户端 + 静态 grep |
+| R25 | “为 NeonSAN ci/ 框架设计用例并映射 CI-1/CI-2/M” | 路由 `ci-test-case`，由其引用 `test-case-design` 的通用方法 | 通用技能缺失导致断链，或项目技能重复内置全部通用方法 | 需客户端 |
+| R26 | 静态检查 humanizer-zh | `references/patterns-catalog.md` 含 24 个模式编号；SKILL.md ≤180 行并指目录 | 模式缺失、编号重复或 SKILL 重新膨胀 | 静态 |
+| R27 | 比对 each `references/shared-method.md` 与 `shared/references/method-and-evidence.md` | SHA-256 完全一致 | 任一副本漂移 | 静态 |
+| R28 | 运行 `python3 scripts/skill_audit.py --check` | 退出码 0，0 error | 出现 error 或非零退出 | 静态 |
+| R29 | 检查 Workflow 与 Command 引用 | 每个 command 有同名 workflow；引用的技能名均可解析 | 悬空引用或 command 缺 workflow | 静态（含于 R28） |
+
 ## 记录与比较
 
 每次记录客户端/模型、技能版本 commit、输入与附件、可用工具、实际路由、输出路径、逐项结果（通过/失败/未运行/受阻）及失败证据。涉及文件与浏览器的任务必须提供相应测试夹具；缺少夹具或工具时标为受阻，不能算通过。

@@ -30,11 +30,24 @@
 ## 目录结构
 
 ```
-skills/       Skill 定义（storage/ 与 writing/ 分类）
-workflows/    Workflow 流水线定义
+skills/       Skill 定义（storage/、writing/、testing/ 分类）
+workflows/    Workflow 流水线定义（编排散文，不会被自动发现）
+commands/     Claude Code slash command 入口，每个 Workflow 一个同名文件
 templates/    输出结构模板
-docs/         仓库说明与开发指南
+shared/       通用规则唯一手维护源，生成到各 Skill 的 references/
+scripts/      静态校验、注册表生成与安装同步辅助
+docs/         仓库说明与开发指南；optimization/ 为审计交付物
 ```
+
+## 静态校验
+
+```bash
+python3 scripts/skill_audit.py --check     # 结构、引用、重复、脱敏、生成物漂移
+python3 scripts/skill_audit.py --write     # 重新生成注册表/清单/依赖与 shared-method 副本
+python3 scripts/sync_skills.py             # 安装同步预览（默认 dry-run）
+```
+
+`docs/optimization/` 中的注册表、清单与依赖报告由脚本生成，不手改；其余审计报告为人工编写。通用规则改 `shared/references/method-and-evidence.md`，再 `--write` 生成副本，不要直接改 `references/shared-method.md`。
 
 ## 与 ~/.claude/skills/ 的关系
 

@@ -18,6 +18,27 @@
 rsync -a -c --delete-delay --omit-dir-times skills/storage/design-document/ ~/.claude/skills/design-document/
 ```
 
+`scripts/sync_skills.py` 提供带差异预览的同步方式，默认 dry-run，`--apply` 才写入：
+
+```bash
+python3 scripts/sync_skills.py                          # 预览全部 Hans 技能
+python3 scripts/sync_skills.py --skills design-document --apply
+python3 scripts/sync_skills.py --commands --workflows --apply
+```
+
+删除目标目录中多余文件必须显式加 `--delete`；同步 personal-notes 技能须显式 `--repo personal-notes`。
+
+### Command 与 Workflow 的同步
+
+Claude Code **不会自动发现** `workflows/`。`WORKFLOW.md` 是编排说明，实际入口是 `commands/<name>.md`：
+
+```bash
+rsync -a -c --delete-delay --omit-dir-times commands/ ~/.claude/commands/
+rsync -a -c --delete-delay --omit-dir-times workflows/ ~/.claude/workflows/
+```
+
+同步后可用 `/storage-feature-design`、`/storage-bug-analysis`、`/storage-performance-analysis`、`/technical-writing`。未同步时，可在对话中直接说明任务，由技能自动触发。
+
 ### NeonSAN 专属技能
 
 `neonsan-docs`、`ci-test-case`、`writing-neonsan-internals` 绑定 NeonSAN 项目，**不在本仓库**，由 `personal-notes` 仓库的 `skills/` 维护。这些技能同样需要同步到 `~/.claude/skills/`：
@@ -80,6 +101,8 @@ rsync -a -c --delete-delay --omit-dir-times skills/writing/humanizer-zh/ ~/.clau
 | 分析一个性能问题 | `storage-performance-analysis` |
 | 写一篇技术文章 | `technical-writing` |
 
+上表的 Workflow 需先按上文同步 `commands/` 与 `workflows/`，再以 slash command 调用；直接说任务时由 Skill 自动匹配，但不会自动加载整条流水线。
+
 ## 写作任务入口
 
 - 项目原理、源码证据、系列规划、技术评审或系列一致性：`writing-project-principles`。
@@ -94,4 +117,4 @@ rsync -a -c --delete-delay --omit-dir-times skills/writing/humanizer-zh/ ~/.clau
 1. 用 `storage-code-analysis` 分析现有 Discard 处理路径（源码事实）。
 2. 用 `design-document` 产出 8 章节设计文档（含并发 / 一致性 / 兼容 / 测试）。
 3. 用 `neonsan-docs`（personal-notes 仓库维护）按 NeonSAN 规范归档落盘。
-4. 或直接走 `storage-feature-design` Workflow 端到端完成。
+4. 或调用 `/storage-feature-design` 端到端完成（需先同步 `commands/` 与 `workflows/`）。

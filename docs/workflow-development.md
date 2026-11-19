@@ -6,6 +6,8 @@
 2. 每个 WORKFLOW.md 必须含：目的、适用场景、阶段流水线（ASCII）、每阶段用到的 Skill、产出物、检查清单。
 3. 阶段流水线用 ASCII 图表达端到端流程。
 4. 明确每个阶段用哪个 Skill，不把逻辑塞进单个 Skill。
+5. 在 `commands/<workflow-name>.md` 创建同名 slash command 入口。Claude Code 不会自动发现 `workflows/`，没有 command 的 Workflow 只能作为文档阅读。
+6. command 只做入口编排：读取 `~/.claude/workflows/<name>/WORKFLOW.md`（不存在时回退仓库路径），按阶段委托技能，不复制整份 workflow 正文。
 
 ## 何时用 Workflow 而非 Skill
 
@@ -20,3 +22,5 @@
 - [ ] 每阶段 Skill 引用正确
 - [ ] 产出物明确
 - [ ] 检查清单可执行
+- [ ] `commands/<name>.md` 存在，引用可解析
+- [ ] 同步说明覆盖 `commands/` 与 `workflows/`
