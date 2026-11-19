@@ -29,9 +29,12 @@
 
 | 阶段 | Skill |
 |---|---|
-| 故障现象 → 根因 | `storage-debug` |
+| 故障现象 → 根因 | `storage-debug`（主入口） |
+| 数据不一致 / 数据复活 / 疑似竞态 | `storage-concurrency-analysis`（条件分支：先梳理并发生命周期与交错时序，再回到 `storage-debug` 验证） |
 | 源码分析 / 调用链 | `storage-code-analysis` |
 | 修复方案 / 测试方案 | `design-document` |
+
+条件分支不改变主入口：症状明确指向数据不一致、已删除对象重新可见或竞态时，才增加并发分析；普通空间未释放、IO 行为异常仍由 `storage-debug` 直接推进。
 
 ## 产出物
 

@@ -18,8 +18,8 @@
   → 现状分析
   → 源码分析
   → 约束分析
-  → 方案设计
   → 并发/一致性分析
+  → 方案设计
   → 异常处理
   → 兼容/升级
   → 测试设计
@@ -32,7 +32,8 @@
 | 阶段 | Skill |
 |---|---|
 | 现状分析 / 源码分析 | `storage-code-analysis` |
-| 方案设计 / 并发一致性 / 异常 / 兼容升级 / 测试设计 | `design-document` |
+| 并发 / 一致性分析 | `storage-concurrency-analysis`（结论作为方案输入，不替代方案设计） |
+| 方案设计 / 异常 / 兼容升级 / 测试设计 | `design-document` |
 | 项目归档 | 确认是 NeonSAN 时使用 `neonsan-docs`（personal-notes 仓库维护）；其他项目遵循自身规则 |
 
 ## 产出物

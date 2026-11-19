@@ -4,6 +4,12 @@
 
 按用户目标规划、撰写或调整技术内容；语言润色和微信 HTML 排版按需进入。普通博客和原理系列不默认生成公众号版本。
 
+## 适用场景
+
+用户要规划或撰写技术原理文章、把已有内容改成公众号文章、对既有文本做语言润色，或把已确认的 Markdown 排成微信 HTML。只要目标是把技术内容组织成可阅读的文章，而不是做源码分析、故障排查或方案设计，就走本工作流。
+
+不适用：需要先补源码事实或排障结论时，先用 `storage-code-analysis` / `storage-debug`；需要设计文档内容时用 `design-document`。
+
 ## 入口路由
 
 | 用户任务 | 主导 Skill | 完成条件 |
@@ -12,6 +18,7 @@
 | 公众号选题、标题与面向读者的表达；已有文章调整公众号版本 | `wechat-tech-article` | 内容稿或指定范围的表达修订 |
 | 已有文本只需语言润色 | `humanizer-zh` | 保持事实、技术限定与作者声音的修订稿 |
 | 已有 Markdown 只需微信 HTML | `producing-tech-blog` | 内容保真的 HTML 与检查状态 |
+| NeonSAN 专属原理文档的规范与归档 | `writing-neonsan-internals`（personal-notes 仓库维护，仅 NeonSAN 任务使用） | 符合内部规范的原理文档 |
 
 “写公众号原理文章”由 writing-project-principles 负责机制与证据，wechat-tech-article 按需处理标题与读者表达，不重复建立证据基线。用户只要求系列规划或评审时，不继续生成正文。
 
