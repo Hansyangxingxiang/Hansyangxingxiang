@@ -34,6 +34,8 @@ python3 scripts/blog_lint.py article.md --deny deny-words.txt
 
 ## 验收与交付
 
+排版前的正文格式、ASCII 图与静态检查遵循 `markdown-document-standard`；本技能只做内容保真的 HTML 转换，不重排章节或改写技术内容。
+
 - 对照源稿检查标题、段落、数字、代码、图表信息及引用完整性，确认转义正确、标签闭合、CSS 内联且无外部脚本依赖。
 - 技术审校逐条过 `references/TECH_REVIEW_CHECKLIST.md`；配图与截图脱敏参照 `references/BLOG_IMAGE_GUIDE.md`。
 - 有浏览器时检查窄屏、长代码与图表；实际微信客户端预览单独记录。静态检查不能证明微信显示正常。

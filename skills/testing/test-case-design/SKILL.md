@@ -130,6 +130,8 @@ description: >
 
 ## 6. 组织设计文档
 
+文档格式、表格、ASCII 图与静态检查遵循 `markdown-document-standard`；结构骨架以 `templates/test-case-design.md` 为准，本节只保留组织判断。
+
 默认结构，按实际范围合并，不强制生成空章节：
 
 1. **概述与测试范围**：输入依据与版本、目标、范围、不覆盖范围。

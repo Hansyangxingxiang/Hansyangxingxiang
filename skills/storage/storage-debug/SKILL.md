@@ -64,6 +64,8 @@ Block Layer → 请求合并/调度、discard 处理（blktrace、iostat）
 
 ## 排障记录单模板
 
+记录单的格式、ASCII 分层图与静态检查遵循 `markdown-document-standard`；模板只约束结构，不替代证据收集。
+
 ```
 ## 现象
 - 一句话：<什么操作、什么环境、什么表现、何时开始>

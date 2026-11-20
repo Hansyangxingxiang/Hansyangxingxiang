@@ -108,6 +108,8 @@ description: Use when analyzing storage concurrency, races, consistency or data 
 
 ## 图示表达
 
+格式、ASCII 布局与静态检查遵循 `markdown-document-standard`；本技能只决定并发语义与标注内容。
+
 - Claude Code 终端默认使用 ASCII：用编号步骤、`|` / `+--+` 和箭头表达交错；在危险交错处直接标注"并发窗口"。
 - 目标平台支持 Mermaid 时，可用 `sequenceDiagram` 表达交错（`Note over` 标注并发窗口与危险点），用 `stateDiagram-v2` 表达 extent / 卷 / 恢复状态机；可复用片段见 `references/mermaid-templates.md`。
 - 不要为画而画——只在交错能说明问题时才画。图示中的模块、锁和状态必须在正文有对应解释。
