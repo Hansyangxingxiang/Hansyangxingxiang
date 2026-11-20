@@ -9,7 +9,7 @@
 | 计划范围 | <模块/仓库/环境> |
 | 最后核验 | <YYYY-MM-DD / 未核验> |
 
-> 结构骨架来自 `markdown-document-standard`。计划必须可执行、可验证、可回滚；不把计划中的工作写成已完成。
+> 结构骨架来自 `markdown-document-standard`。计划必须可执行、可验证、可回滚；不把计划中的工作写成已完成。需要持续记录状态、步骤与验证的执行台账时，用 `templates/plan-driven-development.md`；本文仍是正式实施计划交付物。
 
 ## 1. 任务背景
 

@@ -30,7 +30,7 @@
 ## 目录结构
 
 ```
-skills/       Skill 定义（storage/、writing/、testing/ 分类）
+skills/       Skill 定义（storage/、writing/、testing/、planning/ 分类）
 workflows/    Workflow 流水线定义（编排散文，不会被自动发现）
 commands/     Claude Code slash command 入口，每个 Workflow 一个同名文件
 templates/    输出结构模板
@@ -51,6 +51,15 @@ python3 skills/writing/markdown-document-standard/scripts/tests/test_doc_lint.py
 ```
 
 静态检查不能验证技术结论、图语义或渲染效果；未运行或未人工审查时不得声称通过。
+
+## 计划驱动执行
+
+复杂、多步骤、跨文件任务使用 `skills/planning/plan-driven-development/` 与 `workflows/plan-driven-development/WORKFLOW.md`，显式入口是 `/plan-driven-development`。计划方法、评审门槛、执行授权、验证与恢复以该技能为唯一权威源；四个领域 Workflow 只写一行指针。
+
+- 原生 Plan Mode 负责权限与计划确认；Plan Mode 内不写项目文件，也不创建 `docs/plans/`。
+- 计划确认不等于执行授权；用户明确要求执行后才落盘并修改。
+- 执行台账在 `docs/plans/YYYY-MM-DD-task-name.md`，结构见 `templates/plan-driven-development.md`，状态与恢复规则见 `docs/plans/README.md`。
+- 领域内容仍由对应 Workflow / Skill 决定；本工作流不替代设计、源码分析、排障或写作。
 
 ## 静态校验
 

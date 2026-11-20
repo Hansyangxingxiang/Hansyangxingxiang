@@ -1,6 +1,12 @@
 {
   "commands": [
     {
+      "name": "plan-driven-development",
+      "path": "commands/plan-driven-development.md",
+      "sha256": "a5c46dafb50dabb75510c1dcea98b383ee5ce9eaa9c07e9cd2c7f6652ccf3095",
+      "workflow": "plan-driven-development"
+    },
+    {
       "name": "storage-bug-analysis",
       "path": "commands/storage-bug-analysis.md",
       "sha256": "d1b81bf2fdc93f63c6ca73b54ba1f9dce82249c49937b8ab7ba9fb5525e9e980",
@@ -52,6 +58,7 @@
       "skills/writing/humanizer-zh",
       "skills/writing/markdown-document-standard",
       "skills/writing/producing-tech-blog",
+      "skills/planning/plan-driven-development",
       "skills/writing/wechat-tech-article",
       "skills/writing/writing-project-principles",
       "skills/testing/test-case-design"
@@ -71,6 +78,32 @@
   ],
   "schema_version": 1,
   "skills": [
+    {
+      "authority": "canonical",
+      "category": "planning",
+      "description_sha256": "2ca629322965f27bc01505ec1d965e32e1d59b081ff6cb7a47aecd053b8bca31",
+      "files": {
+        "SKILL.md": "8fa281b1ab001a26a93be2408d81fb194b46fccfc62a99f220b5bd3059fc29bf",
+        "assets/templates/bug-analysis.md": "c889e1f43966cb4650918cd9618a626b6f94c5da40be75e68372d4c366ed568e",
+        "assets/templates/design-document.md": "aa7fb6b3ba4b96f504b0a13293e897c23e3788ac65220e2bc26714b7cd499e41",
+        "assets/templates/implementation-plan.md": "8a30cbe49f4840367b4c5ad3175775bc5e03bf4b597d2fefb179b7dbcc5f6819",
+        "assets/templates/incident-rca.md": "2d71400e57c0f99929d117f5af8b1e1c86a4e9d5fa6e33de49d40e0567ee0314",
+        "assets/templates/performance-analysis.md": "4d2ce89b549086c7aec471d791d6c8353c59846753c07d9dc059d513d6e21cd6",
+        "assets/templates/plan-driven-development.md": "93367ed25f3654d1cc9aa2dc29bc4422c19864954d28bc3e745282d553045f12",
+        "assets/templates/source-analysis.md": "1dfb6014946de3fb663cc0aaf210eb3c7f34a4b2f3c5c93fa4f2639b0a24d2ef",
+        "assets/templates/technical-article.md": "8ef02378b1d9fdf304c8235595eabfa1150cf2d8e52e6b56816d30e2478a8352",
+        "assets/templates/technical-principles.md": "3b3dcb59ab3e59eb13201ca190a1a2cac71e8d901f2b8fbffcfc90df8f9922f7",
+        "assets/templates/test-case-design.md": "9aaacdc15a591be1b7080672cd4810bb2e0cc101525550ce957f87c1e404135a",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "plan-driven-development",
+      "path": "skills/planning/plan-driven-development",
+      "repo": "hans",
+      "scope": "claude"
+    },
     {
       "authority": "canonical",
       "category": "storage",
@@ -184,19 +217,20 @@
       "category": "writing",
       "description_sha256": "7ab0220a8b410998b6c809ddaaaef28f23cce5844bc41bfdec035df1966e787f",
       "files": {
-        "SKILL.md": "faa7ce7cc55574f202e6e3d1fc81833852f9b83723a13d6aef6c9a4355baf16b",
+        "SKILL.md": "92edf64ca716cef2a1f083e6119fad028821eb3f168e255e40a9b84727b09276",
         "assets/templates/bug-analysis.md": "c889e1f43966cb4650918cd9618a626b6f94c5da40be75e68372d4c366ed568e",
         "assets/templates/design-document.md": "aa7fb6b3ba4b96f504b0a13293e897c23e3788ac65220e2bc26714b7cd499e41",
-        "assets/templates/implementation-plan.md": "b1b38e60202ca62c5ab07bdfef22fbe878593b12dfd8d1008d990a3f4f124a32",
+        "assets/templates/implementation-plan.md": "8a30cbe49f4840367b4c5ad3175775bc5e03bf4b597d2fefb179b7dbcc5f6819",
         "assets/templates/incident-rca.md": "2d71400e57c0f99929d117f5af8b1e1c86a4e9d5fa6e33de49d40e0567ee0314",
         "assets/templates/performance-analysis.md": "4d2ce89b549086c7aec471d791d6c8353c59846753c07d9dc059d513d6e21cd6",
+        "assets/templates/plan-driven-development.md": "93367ed25f3654d1cc9aa2dc29bc4422c19864954d28bc3e745282d553045f12",
         "assets/templates/source-analysis.md": "1dfb6014946de3fb663cc0aaf210eb3c7f34a4b2f3c5c93fa4f2639b0a24d2ef",
         "assets/templates/technical-article.md": "8ef02378b1d9fdf304c8235595eabfa1150cf2d8e52e6b56816d30e2478a8352",
         "assets/templates/technical-principles.md": "3b3dcb59ab3e59eb13201ca190a1a2cac71e8d901f2b8fbffcfc90df8f9922f7",
         "assets/templates/test-case-design.md": "9aaacdc15a591be1b7080672cd4810bb2e0cc101525550ce957f87c1e404135a",
         "references/ascii-diagram-guide.md": "549769585da09b8caf0c15514fc78b3af61053656f3efa0c1b6e84cec6bfe912",
         "references/document-review-checklist.md": "6910c25e3fdc8a3959b9b5cc2e60603c30c038f25d2ecaf0257dbe7d826a7e5a",
-        "references/document-types.md": "79659b965624ec9d487fde91dd3cfd114aac5fe1de7792fdb02f264e62940265",
+        "references/document-types.md": "96eac3c598d32c4e1f4787d1330b129dc7f828c81611d5f8f457acc92099cce3",
         "references/existing-document-editing.md": "fc185d5990dcc541a8af6439912213204dd3e2e0c67b0bfd9100da7fc6404df2",
         "references/markdown-style-guide.md": "0bae1d346390c6edf4f46701ee76283df444c63692f686c8df33a7cc1d631789",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a",
@@ -340,6 +374,7 @@
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
         "docs/markdown-standard/examples/implementation-plan.md",
+        "skills/planning/plan-driven-development/assets/templates/bug-analysis.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/bug-analysis.md",
         "skills/writing/markdown-document-standard/references/document-types.md",
@@ -353,6 +388,7 @@
         "docs/README.md",
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
+        "skills/planning/plan-driven-development/assets/templates/design-document.md",
         "skills/storage/design-document/SKILL.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/design-document.md",
@@ -368,12 +404,13 @@
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
         "docs/markdown-standard/examples/implementation-plan.md",
+        "skills/planning/plan-driven-development/assets/templates/implementation-plan.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/implementation-plan.md",
         "skills/writing/markdown-document-standard/references/document-types.md"
       ],
       "path": "templates/implementation-plan.md",
-      "sha256": "3543f526320b49da91abf9401fc691851b88c8db467b4f3b12836fef4ae1bdf6"
+      "sha256": "a8ecd1f3a2408ea0a460b657927eb153ffd3ddb0d99422e468c614ab7dae580f"
     },
     {
       "cited_by": [
@@ -381,6 +418,8 @@
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
         "docs/markdown-standard/examples/implementation-plan.md",
+        "skills/planning/plan-driven-development/assets/templates/bug-analysis.md",
+        "skills/planning/plan-driven-development/assets/templates/incident-rca.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/bug-analysis.md",
         "skills/writing/markdown-document-standard/assets/templates/incident-rca.md",
@@ -394,6 +433,7 @@
         "docs/README.md",
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
+        "skills/planning/plan-driven-development/assets/templates/performance-analysis.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/performance-analysis.md",
         "skills/writing/markdown-document-standard/references/document-types.md",
@@ -404,9 +444,29 @@
     },
     {
       "cited_by": [
+        "commands/plan-driven-development.md",
+        "docs/README.md",
+        "docs/plans/README.md",
+        "docs/skill-conventions.md",
+        "docs/usage.md",
+        "skills/planning/plan-driven-development/SKILL.md",
+        "skills/planning/plan-driven-development/assets/templates/implementation-plan.md",
+        "skills/planning/plan-driven-development/assets/templates/plan-driven-development.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/implementation-plan.md",
+        "skills/writing/markdown-document-standard/assets/templates/plan-driven-development.md",
+        "skills/writing/markdown-document-standard/references/document-types.md",
+        "workflows/plan-driven-development/WORKFLOW.md"
+      ],
+      "path": "templates/plan-driven-development.md",
+      "sha256": "46e99888aa8907952b3ef4dd96844b32d97c29139ea2d5260c02e3a8cee76b1a"
+    },
+    {
+      "cited_by": [
         "docs/README.md",
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
+        "skills/planning/plan-driven-development/assets/templates/source-analysis.md",
         "skills/storage/storage-code-analysis/SKILL.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/source-analysis.md",
@@ -420,6 +480,7 @@
         "docs/README.md",
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
+        "skills/planning/plan-driven-development/assets/templates/technical-article.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/technical-article.md",
         "skills/writing/markdown-document-standard/references/document-types.md",
@@ -434,6 +495,7 @@
         "docs/README.md",
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
+        "skills/planning/plan-driven-development/assets/templates/technical-principles.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/technical-principles.md",
         "skills/writing/markdown-document-standard/references/document-types.md",
@@ -447,6 +509,7 @@
         "docs/README.md",
         "docs/markdown-standard/README.md",
         "docs/markdown-standard/REPORT.md",
+        "skills/planning/plan-driven-development/assets/templates/test-case-design.md",
         "skills/testing/test-case-design/SKILL.md",
         "skills/writing/markdown-document-standard/SKILL.md",
         "skills/writing/markdown-document-standard/assets/templates/test-case-design.md",
@@ -458,12 +521,25 @@
   ],
   "workflows": [
     {
-      "name": "storage-bug-analysis",
-      "path": "workflows/storage-bug-analysis/WORKFLOW.md",
-      "sha256": "e08e63892034b4f35942a24ee85c8c889a8cbde29def98eaa9d5e96bd4a7342d",
+      "name": "plan-driven-development",
+      "path": "workflows/plan-driven-development/WORKFLOW.md",
+      "sha256": "de9e882b0b636186ca505f04c83e9603ade38d5c3c1169011854543c63437459",
       "skills": [
         "design-document",
         "markdown-document-standard",
+        "plan-driven-development",
+        "storage-code-analysis",
+        "storage-debug"
+      ]
+    },
+    {
+      "name": "storage-bug-analysis",
+      "path": "workflows/storage-bug-analysis/WORKFLOW.md",
+      "sha256": "84450f816f7748bd39324f0758dbb126b1619fc42cbb7ed56976a3b87be43982",
+      "skills": [
+        "design-document",
+        "markdown-document-standard",
+        "plan-driven-development",
         "storage-code-analysis",
         "storage-concurrency-analysis",
         "storage-debug"
@@ -472,11 +548,12 @@
     {
       "name": "storage-feature-design",
       "path": "workflows/storage-feature-design/WORKFLOW.md",
-      "sha256": "dc660affb6bf451008ba37cd8821b45f6ba154f516796b4c8692ecb6541fc77b",
+      "sha256": "89f988497660841f2cc341936ec24829ff7b9890f998278b4c49feb9c591466a",
       "skills": [
         "design-document",
         "markdown-document-standard",
         "neonsan-docs",
+        "plan-driven-development",
         "storage-code-analysis",
         "storage-concurrency-analysis"
       ]
@@ -484,10 +561,11 @@
     {
       "name": "storage-performance-analysis",
       "path": "workflows/storage-performance-analysis/WORKFLOW.md",
-      "sha256": "9310dfe10da6b64b9381795b9614e49fc9796e970a96ef3ee7878fbd5ef75d07",
+      "sha256": "79f77d3616e17ca794464cfc92630d1f7cffc5845015d5022a90397d8946ea69",
       "skills": [
         "design-document",
         "markdown-document-standard",
+        "plan-driven-development",
         "storage-code-analysis",
         "storage-debug"
       ]
@@ -495,11 +573,12 @@
     {
       "name": "technical-writing",
       "path": "workflows/technical-writing/WORKFLOW.md",
-      "sha256": "5984b940abe8f8851e8666837474a2c6daca22527c2c441d5a88d7a5319587ee",
+      "sha256": "57233a6b1b54b8e58f16b55682d357c476c9b8b5a676aae6f1ba84e6d3b48ca6",
       "skills": [
         "design-document",
         "humanizer-zh",
         "markdown-document-standard",
+        "plan-driven-development",
         "producing-tech-blog",
         "storage-code-analysis",
         "storage-debug",

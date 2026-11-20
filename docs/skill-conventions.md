@@ -48,14 +48,21 @@
 
 - 通用方法与证据规则 → `shared/references/method-and-evidence.md`。
 - 项目专属术语与流程 → 项目仓库（如 `personal-notes`），通用技能不得写入。
-- 输出结构 → `templates/`，技能只负责方法与判断；安装副本由 `scripts/skill_audit.py --write` 生成到 `markdown-document-standard/assets/templates/`，不手改。
+- 输出结构 → `templates/`，技能只负责方法与判断；安装副本由 `scripts/skill_audit.py --write` 生成到需要自包含模板的技能 `assets/templates/`，不手改。
 - 正文格式 / ASCII 图 / 元数据 / 静态检查 → `markdown-document-standard`，其他技能只写一行指针。
 - 编排顺序 → `workflows/`，命令只负责入口与阶段委托。
+
+## 计划与执行治理
+
+- 复杂任务的计划方法、评审门槛、执行授权、验证与恢复只在 `skills/planning/plan-driven-development/SKILL.md` 定义；领域 Workflow 只写一行指针。
+- 计划与执行台账放 `docs/plans/YYYY-MM-DD-task-name.md`，结构由 `templates/plan-driven-development.md` 约束；状态词表与恢复流程见 `docs/plans/README.md`。
+- 原生 Plan Mode 负责权限与计划确认；项目台账不等于原生计划文件，Plan Mode 内不写项目文件。
+- 计划确认不等于执行授权；领域 Workflow 不复制这套审批规则。
 
 ## Workflow 与命令
 
 - `workflows/<name>/WORKFLOW.md` 是编排说明，Claude Code **不会自动发现**。
-- 每个 Workflow 必须配 `commands/<name>.md` 作为显式入口；命令 frontmatter 只使用 `description` 与可选 `argument-hint`，正文用 `$ARGUMENTS` 并委托 WORKFLOW.md 的阶段。
+- 每个 Workflow 必须配 `commands/<name>.md` 作为显式入口；命令 frontmatter 只使用 `description` 与可选 `argument-hint`，正文用 `$ARGUMENTS` 并委托 WORKFLOW.md 的阶段。`plan-driven-development` 的命令还必须声明 Plan Mode 只读与执行授权边界。
 - 命令不得复制整份 Workflow 正文。
 
 ## 命名与改名

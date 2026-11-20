@@ -14,6 +14,7 @@
       "skills/writing/humanizer-zh",
       "skills/writing/markdown-document-standard",
       "skills/writing/producing-tech-blog",
+      "skills/planning/plan-driven-development",
       "skills/writing/wechat-tech-article",
       "skills/writing/writing-project-principles",
       "skills/testing/test-case-design"
@@ -21,7 +22,8 @@
   },
   "generated_templates": {
     "templates": [
-      "skills/writing/markdown-document-standard"
+      "skills/writing/markdown-document-standard",
+      "skills/planning/plan-driven-development"
     ]
   },
   "generated_personal": {
@@ -41,6 +43,7 @@
     "producing-",
     "humanizer-",
     "markdown-document-standard",
+    "plan-driven-development",
     "design-document",
     "ci-test-case",
     "neonsan-docs",

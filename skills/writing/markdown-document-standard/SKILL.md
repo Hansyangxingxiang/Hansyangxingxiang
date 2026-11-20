@@ -51,7 +51,8 @@ description: Use when 需要统一技术文档的 Markdown 排版、章节结构
 | 性能分析与优化 | `templates/performance-analysis.md` | `storage-debug` + `design-document` |
 | 技术原理讲解 | `templates/technical-principles.md` | `writing-project-principles` |
 | 技术博客 / 公众号草稿 | `templates/technical-article.md` | `wechat-tech-article` |
-| 实施计划 | `templates/implementation-plan.md` | 计划工作流 / 用户 |
+| 实施计划（正式交付物） | `templates/implementation-plan.md` | `plan-driven-development` / 用户 |
+| 计划与执行台账 | `templates/plan-driven-development.md` | `plan-driven-development` |
 | 测试用例设计 | `templates/test-case-design.md` | `test-case-design` |
 
 模板是完整骨架；规模、合并与裁剪由内容技能判断，不机械填满。详细路由与元数据要求见 `references/document-types.md`。

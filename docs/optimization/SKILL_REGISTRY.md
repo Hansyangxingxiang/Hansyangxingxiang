@@ -4,13 +4,14 @@
 
 | Name | Repo | Category | Path | Files | Description sha256 |
 |---|---|---|---|---:|---|
+| `plan-driven-development` | hans | planning | `skills/planning/plan-driven-development` | 12 | `2ca629322965f27b` |
 | `design-document` | hans | storage | `skills/storage/design-document` | 2 | `b3a0ea78a8afbcec` |
 | `storage-code-analysis` | hans | storage | `skills/storage/storage-code-analysis` | 2 | `115d540e99de9878` |
 | `storage-concurrency-analysis` | hans | storage | `skills/storage/storage-concurrency-analysis` | 6 | `ba6ce14806e7ca31` |
 | `storage-debug` | hans | storage | `skills/storage/storage-debug` | 2 | `55f562c2b13345ac` |
 | `test-case-design` | hans | testing | `skills/testing/test-case-design` | 5 | `242fd38cbe84c5b1` |
 | `humanizer-zh` | hans | writing | `skills/writing/humanizer-zh` | 7 | `fb76c0892617c7e1` |
-| `markdown-document-standard` | hans | writing | `skills/writing/markdown-document-standard` | 30 | `7ab0220a8b410998` |
+| `markdown-document-standard` | hans | writing | `skills/writing/markdown-document-standard` | 31 | `7ab0220a8b410998` |
 | `producing-tech-blog` | hans | writing | `skills/writing/producing-tech-blog` | 8 | `cdb0025aaf0279b4` |
 | `wechat-tech-article` | hans | writing | `skills/writing/wechat-tech-article` | 2 | `2bd4fe517f8caab1` |
 | `writing-project-principles` | hans | writing | `skills/writing/writing-project-principles` | 8 | `7d9d280deca841f4` |

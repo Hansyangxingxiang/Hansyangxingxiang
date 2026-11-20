@@ -13,7 +13,8 @@
 | 性能分析 | `templates/performance-analysis.md` | `assets/templates/performance-analysis.md` | `storage-debug` + `design-document` | 必需 |
 | 技术原理 | `templates/technical-principles.md` | `assets/templates/technical-principles.md` | `writing-project-principles` | 建议 |
 | 技术博客 / 公众号草稿 | `templates/technical-article.md` | `assets/templates/technical-article.md` | `wechat-tech-article` | 可选 |
-| 实施计划 | `templates/implementation-plan.md` | `assets/templates/implementation-plan.md` | 计划工作流 / 用户 | 必需 |
+| 实施计划（正式交付物） | `templates/implementation-plan.md` | `assets/templates/implementation-plan.md` | `plan-driven-development` / 用户 | 必需 |
+| 计划与执行台账 | `templates/plan-driven-development.md` | `assets/templates/plan-driven-development.md` | `plan-driven-development` | 必需 |
 | 测试用例设计 | `templates/test-case-design.md` | `assets/templates/test-case-design.md` | `test-case-design` | 必需 |
 
 `assets/templates/` 由 `scripts/skill_audit.py --write` 从 canonical 生成，带固定“Generated; do not edit”头；`--check` 校验字节一致。不要手工编辑副本。
@@ -32,7 +33,7 @@
 
 | 类型 | 追加键 |
 |---|---|
-| 实施计划 | `计划范围` |
+| 实施计划 / 计划与执行台账 | `计划范围` |
 | RCA / 项目归档 | `事件日期`、`处置状态` |
 | 评审材料 | `评审对象`、`评审结论` |
 | 技术原理 | 可选 `系列`、`前置阅读`、`本文范围` |

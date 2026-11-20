@@ -37,7 +37,11 @@ rsync -a -c --delete-delay --omit-dir-times commands/ ~/.claude/commands/
 rsync -a -c --delete-delay --omit-dir-times workflows/ ~/.claude/workflows/
 ```
 
-同步后可用 `/storage-feature-design`、`/storage-bug-analysis`、`/storage-performance-analysis`、`/technical-writing`。未同步时，可在对话中直接说明任务，由技能自动触发。
+同步后可用 `/storage-feature-design`、`/storage-bug-analysis`、`/storage-performance-analysis`、`/technical-writing`、`/plan-driven-development`。未同步时，可在对话中直接说明任务，由技能自动触发。
+
+### 计划驱动执行
+
+复杂、多步骤、跨文件任务使用 `plan-driven-development`。在 Plan Mode 中它只输出计划、不写项目文件；原生计划批准不等于执行授权，需用户明确要求开始执行。执行台账写在项目 `docs/plans/YYYY-MM-DD-task-name.md`，结构见 `templates/plan-driven-development.md`，恢复与状态规则见 `docs/plans/README.md`。领域内容仍由对应 Workflow 与技能负责。
 
 ### NeonSAN 专属技能
 

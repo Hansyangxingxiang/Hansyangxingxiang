@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-本仓库把分散在 `~/.claude/skills/` 的 10 个通用 Skill 整理为受版本管理的副本，并补充 Workflow（组合流水线）、Command（原生入口）与 Template（输出结构），形成「Skills → Workflows → Templates → Claude Code 研发助手」的完整体系。NeonSAN 专属技能由 `personal-notes` 仓库维护。
+本仓库把分散在 `~/.claude/skills/` 的 11 个通用 Skill 整理为受版本管理的副本，并补充 Workflow（组合流水线）、Command（原生入口）与 Template（输出结构），形成「Skills → Workflows → Templates → Claude Code 研发助手」的完整体系。NeonSAN 专属技能由 `personal-notes` 仓库维护。
 
 ## 目录结构
 
@@ -17,7 +17,8 @@
 ├── skills/                   Skill 定义
 │   ├── storage/              存储研发类
 │   ├── writing/              技术写作类
-│   └── testing/              测试设计类
+│   ├── testing/              测试设计类
+│   └── planning/             复杂任务计划与执行治理
 ├── workflows/                端到端流水线（编排散文）
 ├── commands/                 Claude Code slash command 入口
 ├── templates/                输出结构模板
@@ -53,6 +54,12 @@
 |---|---|
 | `test-case-design` | 通用测试用例设计：逐步操作/预期/验证、覆盖映射、有界等待、验收映射；不绑定项目 |
 
+### planning/（计划与执行治理）
+
+| Skill | 职责 |
+|---|---|
+| `plan-driven-development` | 复杂任务的 Plan → Review → Execute → Verify → Report：计划质量、评审门槛、执行授权、台账与恢复；不替代领域技能或原生 Plan Mode |
+
 ### NeonSAN 专属技能（personal-notes 仓库）
 
 以下技能绑定 NeonSAN 项目，由 `personal-notes` 仓库的 `skills/` 维护，本仓库不复制：
@@ -71,6 +78,7 @@
 | `storage-bug-analysis` | 故障排障端到端 | storage-debug（主入口）+ 条件分支 storage-concurrency-analysis + storage-code-analysis + design-document |
 | `storage-performance-analysis` | 性能分析端到端 | storage-debug + storage-code-analysis + design-document |
 | `technical-writing` | 技术写作端到端 | 按任务选择 writing-project-principles / wechat-tech-article / writing-neonsan-internals；润色与 HTML 按需 |
+| `plan-driven-development` | 复杂任务执行治理端到端 | `plan-driven-development` + 按需调用领域 Workflow 与内容技能；计划文件在 `docs/plans/` |
 
 `WORKFLOW.md` 只是编排说明，Claude Code 不会自动发现。实际入口是 `commands/` 下同名 slash command；同步到 `~/.claude/{commands,workflows}/` 后可用。
 
@@ -86,6 +94,7 @@
 | `technical-principles.md` | 技术原理文章（10 章 / compact-5） |
 | `technical-article.md` | 技术文章（10 节候选 + 微信叠加说明） |
 | `implementation-plan.md` | 实施计划（11 章 + 执行前/中/后清单） |
+| `plan-driven-development.md` | 计划与执行台账（状态、目标/范围、决策、实施/验证清单、风险、回滚、执行记录） |
 | `test-case-design.md` | 测试用例设计（项目中性骨架，配合 `test-case-design`） |
 
 模板 canonical 在 `templates/`；`markdown-document-standard/assets/templates/` 是供安装后自包含的生成副本，带 `Generated` 头，不手工编辑。文档格式、ASCII 图与检查规则以该技能为唯一权威源。

@@ -50,6 +50,7 @@
 - 交付物格式、章节结构与元数据遵循 `markdown-document-standard`；文档类型模板见仓库 `templates/`。
 - 架构、控制/数据路径、时序、状态图默认 ASCII；仅显式要求或平台明确需要时用 Mermaid。
 - 阶段产物提交前运行 `doc_lint.py --profile new`（旧文档用 `--profile legacy`）；静态通过不等于技术结论正确。
+- 进入跨文件、跨模块或跨会话执行时，遵守 `plan-driven-development` 的计划确认与执行授权；本工作流只定义领域阶段，不复制审批规则。
 
 ## 阶段交接与完成状态
 
