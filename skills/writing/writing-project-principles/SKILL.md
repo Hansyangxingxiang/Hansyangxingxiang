@@ -79,13 +79,15 @@ description: >
 
 配置文件里的内容只是规划约束，不是已验证的实现事实；动笔前重新固定版本并核验。
 
+通用证据分级、输入不足与交付复用规则见 `references/shared-method.md`；写作特有的证据分类与源码缺失处理以 `references/evidence-rules.md` 为准。
+
 ## 默认文章结构
 
-默认五段：**问题与场景 → 核心原理 → 工作过程 → 边界与异常 → 实验与结论**。这是默认结构，不是机械模板：架构篇突出组件与路径，生命周期篇突出状态与转换条件，性能篇突出模型、瓶颈与实验方法，简单主题可合并章节。默认约 2500–4000 中文字，按复杂度调整；技术事实准确优先于字数。
+结构与章节职责以 `templates/technical-principles.md` 为准：完整 10 章与 compact-5 映射，按主题选择，不逐项填满。本技能决定问题、证据与设计取舍；格式、ASCII 图与静态检查遵循 `markdown-document-standard`。架构篇突出组件与路径，生命周期篇突出状态与转换条件，性能篇突出模型、瓶颈与实验方法。默认约 2500–4000 中文字，技术事实准确优先于字数。
 
 ## 图示
 
-默认 Mermaid，每篇通常 2–3 张核心图。一张图只解释一个主要问题；控制信息与实际数据流明确区分；标注关键数据位置（GPU HBM、host DRAM、remote DRAM、SSD）；系列内组件名、方向和配色语义一致。不混用部署视图、逻辑架构与函数调用层次。用户指定 ASCII 等格式时遵循用户要求。详见 `references/diagram-guidelines.md`。
+默认 ASCII，每篇通常 2–3 张核心图；仅当用户明确要求或目标平台明确需要时使用 Mermaid。一张图只解释一个主要问题；控制信息与实际数据流明确区分；标注关键数据位置（GPU HBM、host DRAM、remote DRAM、SSD）；系列内组件名、方向和线型语义一致。不混用部署视图、逻辑架构与函数调用层次。图后按 `markdown-document-standard` 的四段结构解释；详见 `references/diagram-guidelines.md`。
 
 ## 项目配置
 
@@ -139,5 +141,6 @@ description: >
 | `references/evidence-rules.md` | 固定版本基线、标注证据、处理源码缺失或注释冲突 |
 | `references/diagram-guidelines.md` | 设计架构图、时序图、状态图、流程图 |
 | `references/mooncake.md` | 规划或撰写 Mooncake 系列时 |
+| `markdown-document-standard`（内置模板副本） | 需要完整章节骨架或 compact-5 选择时 |
 | `assets/article-template.md` | 写单篇文章前复制结构 |
 | `assets/series-plan-template.md` | 规划系列时复制结构 |

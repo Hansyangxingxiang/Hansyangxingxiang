@@ -27,7 +27,7 @@ description: Use when investigating a storage/IO problem — 空间未释放、�
 应用层      → 应用行为、系统调用（strace）
 文件系统层  → ext4/xfs 行为、DISCARD 策略（dmesg、mount 选项）
 Block Layer → 请求合并/调度、discard 处理（blktrace、iostat）
-存储栈      → RBD/QBD/Store 处理（ceph daemon、日志）
+存储栈      → RBD/iSCSI/NBD 或自研块存储处理（ceph daemon、日志）
 驱动/硬件   → NVMe/SSD 行为（nvme-cli、smartctl、dmesg）
 ```
 
@@ -63,6 +63,8 @@ Block Layer → 请求合并/调度、discard 处理（blktrace、iostat）
 - 记录：环境、命令、原始输出
 
 ## 排障记录单模板
+
+记录单的格式、ASCII 分层图与静态检查遵循 `markdown-document-standard`；分层图后按该标准的四段结构解释，模板只约束结构，不替代证据收集。
 
 ```
 ## 现象
@@ -105,5 +107,4 @@ Block Layer → 请求合并/调度、discard 处理（blktrace、iostat）
 
 - 输入：故障现象、环境版本、日志与可用观测条件。
 - 交付与完成条件：排障记录：现象、假设及反证、根因状态、下一步实验。未定位也可交付记录，但不能宣称根因确认。
-- 输入不足时先完成有依据的部分，仅询问影响结论或执行的关键缺口。
-- 交接证据包含仓库、commit、文件或符号、结论与验证状态。同一版本且相关文件与运行条件未变化时复用已核验记录；版本、文件或关键条件变化时重核相关结论，不重复开展全部研究。
+- 通用证据分级、输入不足处理、交付与证据复用规则见 `references/shared-method.md`；本节只列本技能特有输入与交付。
