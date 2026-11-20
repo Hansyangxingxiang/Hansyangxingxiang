@@ -4,14 +4,14 @@
 
 | Repo | Scope | Category | Name | Path | SKILL.md lines | Description (trimmed) |
 |---|---|---|---|---|---:|---|
-| hans | claude | planning | `plan-driven-development` | `skills/planning/plan-driven-development` | 117 | Use when 复杂、多步骤、跨文件研发任务需要先计划、评审、授权、分步执行与验证 — Skill 库改造、跨模块重构、功能开发、多文档整合。Not for 单文件小修、纯... |
+| hans | claude | planning | `plan-driven-development` | `skills/planning/plan-driven-development` | 134 | Use when 复杂、多步骤、跨文件研发任务需要先计划、评审、授权、分步执行与验证 — Skill 库改造、跨模块重构、功能开发、多文档整合。Not for 单文件小修、纯... |
 | hans | claude | storage | `design-document` | `skills/storage/design-document` | 63 | Use when writing a storage technical design doc — 新模块设计、功能改造、技术选型、架构评估，需要产出结构化中文方案文档时。N... |
 | hans | claude | storage | `storage-code-analysis` | `skills/storage/storage-code-analysis` | 79 | Use when analyzing Ceph/存储系统源码，需要理解功能实现、IO 路径、函数调用链或数据结构，尤其是要区分"源码事实"与"推测"时。Not for 具体故... |
 | hans | claude | storage | `storage-concurrency-analysis` | `skills/storage/storage-concurrency-analysis` | 151 | Use when analyzing storage concurrency, races, consistency or data safety — 需要系统分析 Writ... |
 | hans | claude | storage | `storage-debug` | `skills/storage/storage-debug` | 110 | Use when investigating a storage/IO problem — 空间未释放、性能异常、IO 行为不符预期、崩溃或卡死，需要从现象反推根因并设计验证... |
 | hans | claude | testing | `test-case-design` | `skills/testing/test-case-design` | 176 | 把需求、设计或场景表整理成可执行、可判定、可评审的中文测试用例设计文档，面向通用软件与存储系统的功能、 边界、异常、并发、数据一致性、故障恢复、兼容升级和性能稳定性测试。适用... |
 | hans | claude | writing | `humanizer-zh` | `skills/writing/humanizer-zh` | 142 | 去除文本中的 AI 生成痕迹。适用于编辑或审阅文本，使其听起来更自然、更像人类书写。 基于维基百科的"AI 写作特征"综合指南，检测并修复夸大的象征意义、宣传性语言、 以 -... |
-| hans | claude | writing | `markdown-document-standard` | `skills/writing/markdown-document-standard` | 121 | Use when 需要统一技术文档的 Markdown 排版、章节结构、ASCII 架构图或发布前静态检查 — 设计文档、源码分析、RCA、性能报告、技术原理、技术博客、实施... |
+| hans | claude | writing | `markdown-document-standard` | `skills/writing/markdown-document-standard` | 123 | Use when 需要统一技术文档的 Markdown 排版、章节结构、ASCII 架构图或发布前静态检查 — 设计文档、源码分析、RCA、性能报告、技术原理、技术博客、实施... |
 | hans | claude | writing | `producing-tech-blog` | `skills/writing/producing-tech-blog` | 46 | 将已有 Markdown 技术文章转换为适合微信公众号的内联 CSS HTML，并检查内容保真与排版。适用于已有正文只需排版、生成微信 HTML；不负责重新选题、源码研究或重... |
 | hans | claude | writing | `wechat-tech-article` | `skills/writing/wechat-tech-article` | 145 | Use when writing a WeChat tech article for storage engineers — 需要选题、定标题、组织文章结构、调整读者表达、做... |
 | hans | claude | writing | `writing-project-principles` | `skills/writing/writing-project-principles` | 146 | 规划、撰写与评审开源基础设施项目的中文技术原理系列，面向分布式存储、云原生与 AI Infrastructure 工程师。 基于源码、官方文档、论文与实验，围绕问题、架构、机... |

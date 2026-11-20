@@ -87,7 +87,7 @@ description: >
 
 ## 图示
 
-默认 ASCII，每篇通常 2–3 张核心图；仅当用户明确要求或目标平台明确需要时使用 Mermaid。一张图只解释一个主要问题；控制信息与实际数据流明确区分；标注关键数据位置（GPU HBM、host DRAM、remote DRAM、SSD）；系列内组件名、方向和线型语义一致。不混用部署视图、逻辑架构与函数调用层次。详见 `references/diagram-guidelines.md` 与 `markdown-document-standard` 的 ASCII 图规范。
+默认 ASCII，每篇通常 2–3 张核心图；仅当用户明确要求或目标平台明确需要时使用 Mermaid。一张图只解释一个主要问题；控制信息与实际数据流明确区分；标注关键数据位置（GPU HBM、host DRAM、remote DRAM、SSD）；系列内组件名、方向和线型语义一致。不混用部署视图、逻辑架构与函数调用层次。图后按 `markdown-document-standard` 的四段结构解释；详见 `references/diagram-guidelines.md`。
 
 ## 项目配置
 

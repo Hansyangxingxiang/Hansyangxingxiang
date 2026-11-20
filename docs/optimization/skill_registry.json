@@ -3,7 +3,7 @@
     {
       "name": "plan-driven-development",
       "path": "commands/plan-driven-development.md",
-      "sha256": "a5c46dafb50dabb75510c1dcea98b383ee5ce9eaa9c07e9cd2c7f6652ccf3095",
+      "sha256": "cc40536b0691a4f99972f2c7abff250c6d8cee21320e268e76ad3b28d001829d",
       "workflow": "plan-driven-development"
     },
     {
@@ -83,16 +83,16 @@
       "category": "planning",
       "description_sha256": "2ca629322965f27bc01505ec1d965e32e1d59b081ff6cb7a47aecd053b8bca31",
       "files": {
-        "SKILL.md": "8fa281b1ab001a26a93be2408d81fb194b46fccfc62a99f220b5bd3059fc29bf",
+        "SKILL.md": "29c54aa5a56145e2215c701dac4c60e382ab778f280ae43ad6b8019a97966436",
         "assets/templates/bug-analysis.md": "c889e1f43966cb4650918cd9618a626b6f94c5da40be75e68372d4c366ed568e",
-        "assets/templates/design-document.md": "aa7fb6b3ba4b96f504b0a13293e897c23e3788ac65220e2bc26714b7cd499e41",
-        "assets/templates/implementation-plan.md": "8a30cbe49f4840367b4c5ad3175775bc5e03bf4b597d2fefb179b7dbcc5f6819",
-        "assets/templates/incident-rca.md": "2d71400e57c0f99929d117f5af8b1e1c86a4e9d5fa6e33de49d40e0567ee0314",
+        "assets/templates/design-document.md": "192f8144370a0345e2b47961a8b6130969b8735df270d8ded9db2c2c6687cc5b",
+        "assets/templates/implementation-plan.md": "6d9edec6d5d5fa97603bde11cf4f9fe1bd2f9c0a2798ccc6ab4e9ba568445af5",
+        "assets/templates/incident-rca.md": "ec36ad3953b88b79bb195aa0d75186a3b691c2fd9199a407fca483e46728fa61",
         "assets/templates/performance-analysis.md": "4d2ce89b549086c7aec471d791d6c8353c59846753c07d9dc059d513d6e21cd6",
-        "assets/templates/plan-driven-development.md": "93367ed25f3654d1cc9aa2dc29bc4422c19864954d28bc3e745282d553045f12",
-        "assets/templates/source-analysis.md": "1dfb6014946de3fb663cc0aaf210eb3c7f34a4b2f3c5c93fa4f2639b0a24d2ef",
+        "assets/templates/plan-driven-development.md": "cbed95a500752e664e10f4b87e635388084f8f1b6f0d3efcf448fd9965ca9dd4",
+        "assets/templates/source-analysis.md": "c31e0085e587a7e0a751d24dc2d5debad1bda518dde9bbe2732a377670dbe774",
         "assets/templates/technical-article.md": "8ef02378b1d9fdf304c8235595eabfa1150cf2d8e52e6b56816d30e2478a8352",
-        "assets/templates/technical-principles.md": "3b3dcb59ab3e59eb13201ca190a1a2cac71e8d901f2b8fbffcfc90df8f9922f7",
+        "assets/templates/technical-principles.md": "3d45e995ec9dae7ffbed2e5d0ede8b9e3eb30920e3741ea3939a3eb29e707a76",
         "assets/templates/test-case-design.md": "9aaacdc15a591be1b7080672cd4810bb2e0cc101525550ce957f87c1e404135a",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
       },
@@ -109,7 +109,7 @@
       "category": "storage",
       "description_sha256": "b3a0ea78a8afbcec72099b602b210f825f219846eab60ad1c8f9b5e52c43b26e",
       "files": {
-        "SKILL.md": "786e7e4e10c1aa6028f0f56776a8c63977e203bb53ab27e02962a27e2c9b4cbf",
+        "SKILL.md": "6d81a81e5280a2df74f688da7c46af68752b6a01eb036947c7be8c7bf4d429b6",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
       },
       "generated_files": [
@@ -125,7 +125,7 @@
       "category": "storage",
       "description_sha256": "115d540e99de9878511a1778d915accffbab0f61ea27b4872bd051c1b5248b89",
       "files": {
-        "SKILL.md": "4a322699721e55b759bad0c2aa0daaaaa024a016655184d6bbae691ff2de3aae",
+        "SKILL.md": "e83d6642264215e52d9588da1d976834189d4e8a77f80ef78cd1ce6bf081c30a",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
       },
       "generated_files": [
@@ -161,7 +161,7 @@
       "category": "storage",
       "description_sha256": "55f562c2b13345ac8892aff35f6aea2e365084694f59b7504f2a7d0709b0e3b6",
       "files": {
-        "SKILL.md": "7d99d2722d8aa946f2e55f84e03ec13b163493ef4f6e2603a70e9c4bbeb06582",
+        "SKILL.md": "67a6990ddbdf3a3a85b4d0b733a3fbe754dd112eda5908937de246fce8a06a92",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
       },
       "generated_files": [
@@ -217,24 +217,24 @@
       "category": "writing",
       "description_sha256": "7ab0220a8b410998b6c809ddaaaef28f23cce5844bc41bfdec035df1966e787f",
       "files": {
-        "SKILL.md": "92edf64ca716cef2a1f083e6119fad028821eb3f168e255e40a9b84727b09276",
+        "SKILL.md": "e7ce46991c267e811ec8870bf87ce699586a5a8bc07a86ad461cd51257fe0d71",
         "assets/templates/bug-analysis.md": "c889e1f43966cb4650918cd9618a626b6f94c5da40be75e68372d4c366ed568e",
-        "assets/templates/design-document.md": "aa7fb6b3ba4b96f504b0a13293e897c23e3788ac65220e2bc26714b7cd499e41",
-        "assets/templates/implementation-plan.md": "8a30cbe49f4840367b4c5ad3175775bc5e03bf4b597d2fefb179b7dbcc5f6819",
-        "assets/templates/incident-rca.md": "2d71400e57c0f99929d117f5af8b1e1c86a4e9d5fa6e33de49d40e0567ee0314",
+        "assets/templates/design-document.md": "192f8144370a0345e2b47961a8b6130969b8735df270d8ded9db2c2c6687cc5b",
+        "assets/templates/implementation-plan.md": "6d9edec6d5d5fa97603bde11cf4f9fe1bd2f9c0a2798ccc6ab4e9ba568445af5",
+        "assets/templates/incident-rca.md": "ec36ad3953b88b79bb195aa0d75186a3b691c2fd9199a407fca483e46728fa61",
         "assets/templates/performance-analysis.md": "4d2ce89b549086c7aec471d791d6c8353c59846753c07d9dc059d513d6e21cd6",
-        "assets/templates/plan-driven-development.md": "93367ed25f3654d1cc9aa2dc29bc4422c19864954d28bc3e745282d553045f12",
-        "assets/templates/source-analysis.md": "1dfb6014946de3fb663cc0aaf210eb3c7f34a4b2f3c5c93fa4f2639b0a24d2ef",
+        "assets/templates/plan-driven-development.md": "cbed95a500752e664e10f4b87e635388084f8f1b6f0d3efcf448fd9965ca9dd4",
+        "assets/templates/source-analysis.md": "c31e0085e587a7e0a751d24dc2d5debad1bda518dde9bbe2732a377670dbe774",
         "assets/templates/technical-article.md": "8ef02378b1d9fdf304c8235595eabfa1150cf2d8e52e6b56816d30e2478a8352",
-        "assets/templates/technical-principles.md": "3b3dcb59ab3e59eb13201ca190a1a2cac71e8d901f2b8fbffcfc90df8f9922f7",
+        "assets/templates/technical-principles.md": "3d45e995ec9dae7ffbed2e5d0ede8b9e3eb30920e3741ea3939a3eb29e707a76",
         "assets/templates/test-case-design.md": "9aaacdc15a591be1b7080672cd4810bb2e0cc101525550ce957f87c1e404135a",
-        "references/ascii-diagram-guide.md": "549769585da09b8caf0c15514fc78b3af61053656f3efa0c1b6e84cec6bfe912",
-        "references/document-review-checklist.md": "6910c25e3fdc8a3959b9b5cc2e60603c30c038f25d2ecaf0257dbe7d826a7e5a",
-        "references/document-types.md": "96eac3c598d32c4e1f4787d1330b129dc7f828c81611d5f8f457acc92099cce3",
-        "references/existing-document-editing.md": "fc185d5990dcc541a8af6439912213204dd3e2e0c67b0bfd9100da7fc6404df2",
-        "references/markdown-style-guide.md": "0bae1d346390c6edf4f46701ee76283df444c63692f686c8df33a7cc1d631789",
+        "references/ascii-diagram-guide.md": "e4bbe3689bbbfb24541d5101907cf28f57789990b9a1d8a5c258eaeb3fad94bd",
+        "references/document-review-checklist.md": "4197d6900b19c17c58ed188684910b96b43c0a1556422bab3ee24f0098479304",
+        "references/document-types.md": "0777b9c6c60e1edba6c3388c5ce8562615c05a5aac695a2b82fd6f2bf3695d06",
+        "references/existing-document-editing.md": "b168d3272a7992393b0ae131b8f76f5d54b9b743d53fe0cddb4bc750c9ffa03d",
+        "references/markdown-style-guide.md": "3bce4e427c71bfbccbf4e9190e00c38e9983daad2f0d45c8462066b610b031d6",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a",
-        "references/technical-writing-guide.md": "1870b1197180f1ef2015c2154f9a4e745cebf9fc0972c085c1fc5c689d943427",
+        "references/technical-writing-guide.md": "2013b0c7869c68b26ee48e5049f61ffc195c570db208f7337add38d94811300f",
         "scripts/doc_lint.py": "ff4fbceea6a99e69e327e3f421f424fdb30b4d50a7a56cf94182b513d54c6b49",
         "scripts/tests/fixtures/bad/ascii.md": "2dd2ceb3f617c7fb6c40234dbc3193272152f7aab97289bebdb0454f98f9f6c3",
         "scripts/tests/fixtures/bad/fence.md": "7107b7ba22e6d7f0cdf9157583d748de1922971711f935efd57e22ece268fbd6",
@@ -300,11 +300,11 @@
       "category": "writing",
       "description_sha256": "7d9d280deca841f44a8a3043fbd832538e959cb7ad700263335048ce28ac8e58",
       "files": {
-        "SKILL.md": "ec19403fffb869a6afe3981502a0c0fc1d5e79aa01436173d030c91e8282233d",
+        "SKILL.md": "a78be2fa0bd004e84d5b717d7e5a84b8c311242746d99c615a77a9c51c0f2def",
         "assets/article-template.md": "e948798c6121cc5b8165daafcc9a7666e70fea5e490fb1c07b90263b476f8a69",
         "assets/series-plan-template.md": "e464d8e98e767c5bd4dbb9bd1c634f5200a37aca3f643c28a42bf6161f4edc45",
         "references/article-structure.md": "4bd8a89254c320ae4b801ca10c8bffa5665be876ab7affbb6bbcf448dccb55a6",
-        "references/diagram-guidelines.md": "8444a6d1bc9e5eda1e77eec8cfe3c88d6a30322251cabd712e0363458a42ea2f",
+        "references/diagram-guidelines.md": "e290b53e3a1cf239375c97b283258106a052b65301f48f5c3f91231a0436d93b",
         "references/evidence-rules.md": "7f957d2306b1c187d67f0a25b140927be0b229abcaa7c938b18631abec49167f",
         "references/mooncake.md": "9ddceb3f614daedc57de8eed3e80586122a4d2f721bf0201038314d8f0550d39",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
@@ -342,7 +342,7 @@
       "description_sha256": "5eb6597c8e5b0e0380b9db33f81d0e0d2d2e6404568a06852e9984ce3a60c6d3",
       "files": {
         "SKILL.md": "f7c3cc8f743031c6bf42f646a59601eceb30bb4438c54b1e9bbfd32d546a99d2",
-        "references/ascii-diagram-rules.md": "cb6530775b1d1f27d03b22372e65434ed094066168614fcdf3a3c02fa0681ece",
+        "references/ascii-diagram-rules.md": "1bc36ed8da459633b958278f5771a614701df5347bb7b6ce57af4385daa5d175",
         "references/project-layout.md": "5aab6d7121f0c09b277c52241cfbb99fdc52dfcc12d3e866b2fc9315264dda0d"
       },
       "generated_files": [],
@@ -357,7 +357,7 @@
       "description_sha256": "22e06b56b8849a842d84432e0760a99aaa1ca24eeac67b5ca74adb9123359f35",
       "files": {
         "SKILL.md": "2ecc74913d607423d704c9b95126c6ad2347a639663837ea06ea3526b150a3dc",
-        "references/figures.md": "97bfa06f2933144bf9b2ffa69ad9441af10b0951df82e8bb2111debabf71a133",
+        "references/figures.md": "d42b75ff0716bc3d112f69cabf3879164deed0e9ed6dd12a9cc3d2e05264175e",
         "references/templates.md": "118e40ed4dcba1ae7c29e0b94f6f34b05343d9af7f1921e614c62281d003453c"
       },
       "generated_files": [],
@@ -396,7 +396,7 @@
         "workflows/storage-feature-design/WORKFLOW.md"
       ],
       "path": "templates/design-document.md",
-      "sha256": "2f44aa5a4455591cab79862d912eba916e638fa44d5058576d9ac2bde4029e7f"
+      "sha256": "561237fc1a48e3cf8d73473dd085ecda90021be39bfc66e9818b2dd0aeab6954"
     },
     {
       "cited_by": [
@@ -410,7 +410,7 @@
         "skills/writing/markdown-document-standard/references/document-types.md"
       ],
       "path": "templates/implementation-plan.md",
-      "sha256": "a8ecd1f3a2408ea0a460b657927eb153ffd3ddb0d99422e468c614ab7dae580f"
+      "sha256": "61318bbd5ee8fd3f9c2cae9111ba9fc29f3ddd58dff57956ce98773a11720de0"
     },
     {
       "cited_by": [
@@ -426,7 +426,7 @@
         "skills/writing/markdown-document-standard/references/document-types.md"
       ],
       "path": "templates/incident-rca.md",
-      "sha256": "c23b08de9119ac15c791b1fd72a44a574976b12e055f709ffb661c7f5dd61a26"
+      "sha256": "6578f43ac8c4b66a25752f9364c410b1da2a6239cd0f6cfe671360817eae7a8a"
     },
     {
       "cited_by": [
@@ -459,7 +459,7 @@
         "workflows/plan-driven-development/WORKFLOW.md"
       ],
       "path": "templates/plan-driven-development.md",
-      "sha256": "46e99888aa8907952b3ef4dd96844b32d97c29139ea2d5260c02e3a8cee76b1a"
+      "sha256": "e880b715d2f659abb7c19c6d31f61d599bef74143b8ee17779259a680783204d"
     },
     {
       "cited_by": [
@@ -473,7 +473,7 @@
         "skills/writing/markdown-document-standard/references/document-types.md"
       ],
       "path": "templates/source-analysis.md",
-      "sha256": "75fd98db26403f84b28f574c475f83abdf38c02ef4853308729c46cc985c66fb"
+      "sha256": "239f753e118001db00455e54656710724e91c6c1709ee9c55796378ccacc857f"
     },
     {
       "cited_by": [
@@ -502,7 +502,7 @@
         "skills/writing/writing-project-principles/SKILL.md"
       ],
       "path": "templates/technical-principles.md",
-      "sha256": "bd34c6edfb863b1f45ba97cdc3c03d29566a971b134fdb0b88748085cc103cbc"
+      "sha256": "8622d5459741137c064e1bdbff0b9baf46f8e75a8a54d47114c51bcdac20232f"
     },
     {
       "cited_by": [
@@ -523,7 +523,7 @@
     {
       "name": "plan-driven-development",
       "path": "workflows/plan-driven-development/WORKFLOW.md",
-      "sha256": "de9e882b0b636186ca505f04c83e9603ade38d5c3c1169011854543c63437459",
+      "sha256": "4e5a092a51270ac6783a9ed1b26e7558b267009164425a07923e0ba60c9af18d",
       "skills": [
         "design-document",
         "markdown-document-standard",

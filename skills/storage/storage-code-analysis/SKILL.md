@@ -62,7 +62,7 @@ description: Use when analyzing Ceph/存储系统源码，需要理解功能实�
 单功能分析使用 `templates/source-analysis.md` 的卡片模式（保留分析目标、入口、调用链、关键结构、结论），跨模块或生命周期分析使用完整 11 章。章节清单与填写要点只在模板维护，本技能不复制。
 
 - 格式、ASCII 图与静态检查遵循 `markdown-document-standard`。
-- 调用链图默认 ASCII；同步调用、异步边界与线程切换在图上分开标注。
+- 调用链图默认 ASCII；同步调用、异步边界与线程切换在图上分开标注；图后按 `markdown-document-standard` 的四段结构解释。
 
 ## Common Mistakes
 
