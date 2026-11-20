@@ -344,6 +344,35 @@ def check_generated(audit, config, write):
             audit.add("error", "generated", target, "generated copy drifted from %s" % canonical_rel)
 
 
+GENERATED_TEMPLATE_HEADER = (
+    "<!-- Generated from templates/%s; do not edit. "
+    "Run scripts/skill_audit.py --write. -->\n\n"
+)
+
+
+def check_generated_templates(audit, config, write):
+    targets = config.get("generated_templates", {}).get("templates", [])
+    tpl_dir = HANS / "templates"
+    if not targets or not tpl_dir.exists():
+        return
+    for skill_rel in targets:
+        dest_dir = HANS / skill_rel / "assets" / "templates"
+        for tpl in sorted(tpl_dir.glob("*.md")):
+            expected = (GENERATED_TEMPLATE_HEADER % tpl.name).encode("utf-8") + tpl.read_bytes()
+            target = dest_dir / tpl.name
+            if write:
+                dest_dir.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(expected)
+                continue
+            if not target.exists():
+                audit.add("error", "generated", target,
+                          "missing generated copy of templates/%s" % tpl.name)
+                continue
+            if target.read_bytes() != expected:
+                audit.add("error", "generated", target,
+                          "generated template drifted from templates/%s" % tpl.name)
+
+
 def check_templates(audit):
     tpl_dir = HANS / "templates"
     if not tpl_dir.exists():
@@ -440,6 +469,8 @@ def build_entries(in_scope, config, audit):
             continue
         files = {}
         for f in sorted(item["dir"].rglob("*")):
+            if "__pycache__" in f.parts or f.suffix == ".pyc":
+                continue
             if f.is_file():
                 files[rel(f, item["dir"])] = sha256_bytes(f.read_bytes())
         entry = {
@@ -608,11 +639,16 @@ def main(argv=None):
                 audit.add("error", "scope", repo_root(scope), "missing repo for scope %s" % scope)
 
     check_generated(audit, config, write=args.write)
+    check_generated_templates(audit, config, write=args.write)
     registry = build_registry(in_scope, config, audit, write=args.write)
 
     md_files = []
     for item in in_scope:
-        md_files.extend(sorted(item["dir"].rglob("*.md")))
+        for md in sorted(item["dir"].rglob("*.md")):
+            # Test fixtures deliberately contain broken links.
+            if "fixtures" in md.parts:
+                continue
+            md_files.append(md)
     for base in (HANS / "workflows", HANS / "commands", HANS / "templates", HANS / "shared"):
         if base.exists():
             md_files.extend(sorted(base.rglob("*.md")))

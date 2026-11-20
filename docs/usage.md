@@ -56,6 +56,25 @@ done
 
 Skill 通过 description 自动触发。也可在对话中直接描述任务，Claude Code 会匹配对应 Skill。
 
+## Markdown 文档标准与检查
+
+格式、章节结构路由、ASCII 图与文档类型模板以 `markdown-document-standard` 为唯一权威源。写设计文档、源码分析、RCA、性能报告、技术原理、公众号文章或实施计划时，先按该技能的 `references/document-types.md` 选模板，再用对应内容技能写正文。
+
+```bash
+# 新文档：0 error 才可交付（warning 仍需人工判断）
+python3 ~/.claude/skills/markdown-document-standard/scripts/doc_lint.py --profile new doc.md
+
+# 旧文档：降级 H1、标题跳级、表格列数与 ASCII 宽度规则
+python3 ~/.claude/skills/markdown-document-standard/scripts/doc_lint.py --profile legacy old.md
+
+# 完整仓库模板与示例（在仓库根执行）
+python3 skills/writing/markdown-document-standard/scripts/doc_lint.py --profile new templates/*.md
+python3 skills/writing/markdown-document-standard/scripts/doc_lint.py --strict docs/markdown-standard/examples/*.md
+python3 skills/writing/markdown-document-standard/scripts/tests/test_doc_lint.py
+```
+
+`doc_lint.py` 只做静态格式检查，不能验证技术结论、图语义或渲染效果；静态通过后仍需人工审查。技术图默认 ASCII；仅当用户明确要求或目标平台明确需要时使用 Mermaid。
+
 ## 存储分析入口
 
 - 并发 / 竞态 / 数据安全（是否丢数据、是否数据复活、谁负责保护、如何验证）：`storage-concurrency-analysis`。

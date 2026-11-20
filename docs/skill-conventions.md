@@ -48,7 +48,8 @@
 
 - 通用方法与证据规则 → `shared/references/method-and-evidence.md`。
 - 项目专属术语与流程 → 项目仓库（如 `personal-notes`），通用技能不得写入。
-- 输出结构 → `templates/`，技能只负责方法与判断。
+- 输出结构 → `templates/`，技能只负责方法与判断；安装副本由 `scripts/skill_audit.py --write` 生成到 `markdown-document-standard/assets/templates/`，不手改。
+- 正文格式 / ASCII 图 / 元数据 / 静态检查 → `markdown-document-standard`，其他技能只写一行指针。
 - 编排顺序 → `workflows/`，命令只负责入口与阶段委托。
 
 ## Workflow 与命令

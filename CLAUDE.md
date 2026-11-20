@@ -39,11 +39,24 @@ scripts/      静态校验、注册表生成与安装同步辅助
 docs/         仓库说明与开发指南；optimization/ 为审计交付物
 ```
 
+## Markdown 文档标准
+
+正文格式、章节结构路由、ASCII 图、元数据与静态检查以 `skills/writing/markdown-document-standard/` 为唯一权威源。文档结构只在 `templates/` 维护；技能不再复制章节清单。正式技术图默认 ASCII，Mermaid 仅作显式例外。
+
+```bash
+# 模板与示例检查（在仓库根执行）
+python3 skills/writing/markdown-document-standard/scripts/doc_lint.py --profile new templates/*.md
+python3 skills/writing/markdown-document-standard/scripts/doc_lint.py --strict docs/markdown-standard/examples/*.md
+python3 skills/writing/markdown-document-standard/scripts/tests/test_doc_lint.py
+```
+
+静态检查不能验证技术结论、图语义或渲染效果；未运行或未人工审查时不得声称通过。
+
 ## 静态校验
 
 ```bash
-python3 scripts/skill_audit.py --check     # 结构、引用、重复、脱敏、生成物漂移
-python3 scripts/skill_audit.py --write     # 重新生成注册表/清单/依赖与 shared-method 副本
+python3 scripts/skill_audit.py --check     # 结构、引用、重复、脱敏、生成模板/ shared-method 漂移
+python3 scripts/skill_audit.py --write     # 重新生成注册表/清单/依赖、shared-method 与模板副本
 python3 scripts/sync_skills.py             # 安装同步预览（默认 dry-run）
 ```
 

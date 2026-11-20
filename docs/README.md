@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-本仓库把分散在 `~/.claude/skills/` 的 9 个通用 Skill 整理为受版本管理的副本，并补充 Workflow（组合流水线）、Command（原生入口）与 Template（输出结构），形成「Skills → Workflows → Templates → Claude Code 研发助手」的完整体系。NeonSAN 专属技能由 `personal-notes` 仓库维护。
+本仓库把分散在 `~/.claude/skills/` 的 10 个通用 Skill 整理为受版本管理的副本，并补充 Workflow（组合流水线）、Command（原生入口）与 Template（输出结构），形成「Skills → Workflows → Templates → Claude Code 研发助手」的完整体系。NeonSAN 专属技能由 `personal-notes` 仓库维护。
 
 ## 目录结构
 
@@ -45,6 +45,7 @@
 | `wechat-tech-article` | 公众号选题 / 标题 / 读者表达 |
 | `producing-tech-blog` | 排版成微信 HTML（`.md` + 内联 CSS）；可选 md2wx / blog_lint 脚本 |
 | `humanizer-zh` | 去除文本 AI 生成痕迹；可选 check_style 脚本 |
+| `markdown-document-standard` | Markdown 格式 / 章节结构路由 / ASCII 图 / 文档类型模板 / `doc_lint.py` 静态检查 |
 
 ### testing/（测试设计）
 
@@ -77,11 +78,17 @@
 
 | Template | 对应产出物 |
 |---|---|
-| `design-document.md` | 设计文档（8 章节骨架） |
-| `bug-analysis.md` | Bug/事故分析归档（8 槽） |
-| `performance-analysis.md` | 性能分析报告 |
-| `technical-article.md` | 技术文章（长文可选骨架，按主题调整） |
+| `design-document.md` | 设计文档（13 个候选章节 → 默认 8 章 + 轻量模式） |
+| `source-analysis.md` | 源码分析（完整 11 章 / 卡片模式） |
+| `incident-rca.md` | 通用故障 RCA（11 章） |
+| `bug-analysis.md` | 项目 Bug/事故分析归档（8 槽 + RCA 映射） |
+| `performance-analysis.md` | 性能分析报告（10 章） |
+| `technical-principles.md` | 技术原理文章（10 章 / compact-5） |
+| `technical-article.md` | 技术文章（10 节候选 + 微信叠加说明） |
+| `implementation-plan.md` | 实施计划（11 章 + 执行前/中/后清单） |
 | `test-case-design.md` | 测试用例设计（项目中性骨架，配合 `test-case-design`） |
+
+模板 canonical 在 `templates/`；`markdown-document-standard/assets/templates/` 是供安装后自包含的生成副本，带 `Generated` 头，不手工编辑。文档格式、ASCII 图与检查规则以该技能为唯一权威源。
 
 ## 如何使用
 

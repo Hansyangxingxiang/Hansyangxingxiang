@@ -50,6 +50,7 @@
       "skills/storage/storage-concurrency-analysis",
       "skills/storage/storage-debug",
       "skills/writing/humanizer-zh",
+      "skills/writing/markdown-document-standard",
       "skills/writing/producing-tech-blog",
       "skills/writing/wechat-tech-article",
       "skills/writing/writing-project-principles",
@@ -75,7 +76,7 @@
       "category": "storage",
       "description_sha256": "b3a0ea78a8afbcec72099b602b210f825f219846eab60ad1c8f9b5e52c43b26e",
       "files": {
-        "SKILL.md": "308590761ac24de5e73cfbae96d5c5a413840005788a8630e3399536b52839b1",
+        "SKILL.md": "786e7e4e10c1aa6028f0f56776a8c63977e203bb53ab27e02962a27e2c9b4cbf",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
       },
       "generated_files": [
@@ -91,7 +92,7 @@
       "category": "storage",
       "description_sha256": "115d540e99de9878511a1778d915accffbab0f61ea27b4872bd051c1b5248b89",
       "files": {
-        "SKILL.md": "0ae384da7944e113486086919eab83b3116ac35c537e1640602fab0a705cc7a0",
+        "SKILL.md": "4a322699721e55b759bad0c2aa0daaaaa024a016655184d6bbae691ff2de3aae",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
       },
       "generated_files": [
@@ -107,7 +108,7 @@
       "category": "storage",
       "description_sha256": "ba6ce14806e7ca31524920be3ed2f17ccccf997ba877d011383234b4ed2365a5",
       "files": {
-        "SKILL.md": "8a7f257d5028a3bbbc44377c5ccd7098108d54eb6db47ecd695b7123862cddf1",
+        "SKILL.md": "3e1af08f601c85094b75a01e634cd22030621cb3081712d8140c2270a164540c",
         "references/framework.md": "0e6ea197b15fd4332891f335f948d438eab7e661a89cb68ced3c930f88e7afef",
         "references/mermaid-templates.md": "111ab5282a95e5992d34fd08dce00cc3aa777c5d4d5a01861912b802aedff7df",
         "references/scenarios.md": "8dd4dc9b7a91c5f23bbeff3ec5bd6a6c753c27055c756c0830d6060071d58442",
@@ -127,7 +128,7 @@
       "category": "storage",
       "description_sha256": "55f562c2b13345ac8892aff35f6aea2e365084694f59b7504f2a7d0709b0e3b6",
       "files": {
-        "SKILL.md": "28f54d084cd8a49903826246f85a71701129e8d0c36d015dadddbd246079c394",
+        "SKILL.md": "7d99d2722d8aa946f2e55f84e03ec13b163493ef4f6e2603a70e9c4bbeb06582",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
       },
       "generated_files": [
@@ -143,7 +144,7 @@
       "category": "testing",
       "description_sha256": "242fd38cbe84c5b1f40727f6505678e1f5933853e660d44ab60e12852b87a521",
       "files": {
-        "SKILL.md": "eca43c7ecc111a4ab5caf5a3c0dbb50bb0b4e963ab07ecd6d83bcc09b29c93aa",
+        "SKILL.md": "be9fcbdcef38b77d0633866955af471e4dc35b346cbea4c417c32a7d6e2c82d2",
         "references/case-template.md": "3f200de2667024d8c23a64a11c593fc2f9c2b959b6d7e359fa84e134b52b72f2",
         "references/implementation-classes.md": "8d1e5fe28b4384d462b2fce87ddf05a8feebe110f796eaa391650d665446c771",
         "references/scenario-checklist.md": "b6aef8dfc564d1d9bfa7d685aa21196a5cc85373327dece5a821c710df4f16cd",
@@ -165,7 +166,7 @@
         ".gitignore": "e52aac198acd71945e1730f45cafba41fffda4e2a0d7d6a38175880aae8eabea",
         "LICENSE": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7",
         "README.md": "60cd3ed8b4753837ca8f8fcebf6076a38591a269d91ea1791aa7448e5a1b1b58",
-        "SKILL.md": "56e6df49a3e0cb3e5df5fa8bf5653f68c8f63cfb2123ed21008e16e19c8190d7",
+        "SKILL.md": "783c0d33c67c43d0d124a2cab283ee6f5ea4731c316c426b49b17e3c59957a08",
         "references/patterns-catalog.md": "2755419dfee056fabf23d6d17f9c3ec35728421034adbc3a37c6ad8d1ea8a5b5",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a",
         "scripts/check_style.py": "093695c28a5b65ad0165824b81b2735cab3a8e1e696710ac780a181097264216"
@@ -181,9 +182,53 @@
     {
       "authority": "canonical",
       "category": "writing",
+      "description_sha256": "7ab0220a8b410998b6c809ddaaaef28f23cce5844bc41bfdec035df1966e787f",
+      "files": {
+        "SKILL.md": "faa7ce7cc55574f202e6e3d1fc81833852f9b83723a13d6aef6c9a4355baf16b",
+        "assets/templates/bug-analysis.md": "c889e1f43966cb4650918cd9618a626b6f94c5da40be75e68372d4c366ed568e",
+        "assets/templates/design-document.md": "aa7fb6b3ba4b96f504b0a13293e897c23e3788ac65220e2bc26714b7cd499e41",
+        "assets/templates/implementation-plan.md": "b1b38e60202ca62c5ab07bdfef22fbe878593b12dfd8d1008d990a3f4f124a32",
+        "assets/templates/incident-rca.md": "2d71400e57c0f99929d117f5af8b1e1c86a4e9d5fa6e33de49d40e0567ee0314",
+        "assets/templates/performance-analysis.md": "4d2ce89b549086c7aec471d791d6c8353c59846753c07d9dc059d513d6e21cd6",
+        "assets/templates/source-analysis.md": "1dfb6014946de3fb663cc0aaf210eb3c7f34a4b2f3c5c93fa4f2639b0a24d2ef",
+        "assets/templates/technical-article.md": "8ef02378b1d9fdf304c8235595eabfa1150cf2d8e52e6b56816d30e2478a8352",
+        "assets/templates/technical-principles.md": "3b3dcb59ab3e59eb13201ca190a1a2cac71e8d901f2b8fbffcfc90df8f9922f7",
+        "assets/templates/test-case-design.md": "9aaacdc15a591be1b7080672cd4810bb2e0cc101525550ce957f87c1e404135a",
+        "references/ascii-diagram-guide.md": "549769585da09b8caf0c15514fc78b3af61053656f3efa0c1b6e84cec6bfe912",
+        "references/document-review-checklist.md": "6910c25e3fdc8a3959b9b5cc2e60603c30c038f25d2ecaf0257dbe7d826a7e5a",
+        "references/document-types.md": "79659b965624ec9d487fde91dd3cfd114aac5fe1de7792fdb02f264e62940265",
+        "references/existing-document-editing.md": "fc185d5990dcc541a8af6439912213204dd3e2e0c67b0bfd9100da7fc6404df2",
+        "references/markdown-style-guide.md": "0bae1d346390c6edf4f46701ee76283df444c63692f686c8df33a7cc1d631789",
+        "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a",
+        "references/technical-writing-guide.md": "1870b1197180f1ef2015c2154f9a4e745cebf9fc0972c085c1fc5c689d943427",
+        "scripts/doc_lint.py": "ff4fbceea6a99e69e327e3f421f424fdb30b4d50a7a56cf94182b513d54c6b49",
+        "scripts/tests/fixtures/bad/ascii.md": "2dd2ceb3f617c7fb6c40234dbc3193272152f7aab97289bebdb0454f98f9f6c3",
+        "scripts/tests/fixtures/bad/fence.md": "7107b7ba22e6d7f0cdf9157583d748de1922971711f935efd57e22ece268fbd6",
+        "scripts/tests/fixtures/bad/h1.md": "ed3c0f44506dbcc627c8191182198ea2b51aaeb989c5cba0f8ea13ad05974c28",
+        "scripts/tests/fixtures/bad/jump.md": "6c5fe6de14f7cf1ed8874142d4657a34a3bb66076211751cba291df044037cb0",
+        "scripts/tests/fixtures/bad/link.md": "4870cd76aa2d3f912479faa351d548dadf67797b3d647874684d9c85f6897c7e",
+        "scripts/tests/fixtures/bad/metadata.md": "3c086f0c53d274d7341c0865b090269a963cb8ee712341e00c646df4f04efa04",
+        "scripts/tests/fixtures/bad/table-columns.md": "abd4a9711e111bf5e8caded7d9e88e435921b4b131fd3355a6716a996866355b",
+        "scripts/tests/fixtures/bad/table-separator.md": "d13a790127a1abba6ae88eb5a9eafbf6ec5f685a3b3136bf4fb2c15e51f2cfac",
+        "scripts/tests/fixtures/good/clean-target.md": "d9c1cfa490a880a7c38c8f4a9360f658a1b694c20ed3b8be05990e074c4e26a1",
+        "scripts/tests/fixtures/good/clean.md": "cee435d8491083c9055f4b937704e3fada6c49f383bb361044b4f3edcd53d668",
+        "scripts/tests/fixtures/good/legacy.md": "e6edda6f7ced1b8b6289169b428f0551b6c71bc95b805a425bebc38dc836aea9",
+        "scripts/tests/test_doc_lint.py": "1b29dff0ae89a33164231df02039c529d7643b080e94487a259c912da6935ddd"
+      },
+      "generated_files": [
+        "references/shared-method.md"
+      ],
+      "name": "markdown-document-standard",
+      "path": "skills/writing/markdown-document-standard",
+      "repo": "hans",
+      "scope": "claude"
+    },
+    {
+      "authority": "canonical",
+      "category": "writing",
       "description_sha256": "cdb0025aaf0279b4ebd22b00deb016c1dece06422173ccb522e9b51a21c3c720",
       "files": {
-        "SKILL.md": "1393e05ce2160255f1ea9d0844fc74560e4830a53abcf530287730a6e9204d1d",
+        "SKILL.md": "84d177984126cef73cc128c8780ecd5779970fcba6fcb0bf02b69f9cfe554712",
         "project-conventions.template.md": "65f8a7d0c2cec2dc93cfec8a17f98d1afa94a034e87a9694eeb88b6543ac4c2d",
         "references/BLOG_IMAGE_GUIDE.md": "519b14a076bfd1e616d7a2b01d083784ccac44baf74d1799ceec288c6e4072f0",
         "references/TECH_REVIEW_CHECKLIST.md": "978392457b642e9c8b8453a0bfe833d49ad0f23bed1be4bd3032949170ba4020",
@@ -205,7 +250,7 @@
       "category": "writing",
       "description_sha256": "2bd4fe517f8caab1f7d200809d148831023136a27de8693cf9ef8f0dfef5d401",
       "files": {
-        "SKILL.md": "cfe3b988d057048f335e416250b4e45553ec697b758e5ea3376ec13902950521",
+        "SKILL.md": "50d4a55d1fe823cf14f1473932bfffc7c8e5054ac04b36431da16be87be73e95",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
       },
       "generated_files": [
@@ -221,11 +266,11 @@
       "category": "writing",
       "description_sha256": "7d9d280deca841f44a8a3043fbd832538e959cb7ad700263335048ce28ac8e58",
       "files": {
-        "SKILL.md": "4331bc8dacd6b35ad1609fa9e69e9bc47895e9033fa33e20cdd24499c49ca72c",
-        "assets/article-template.md": "b9cd6da17a6974b6a5c886992904f631159d41ae1bf3a7e1a9cec750bb2aa4fd",
-        "assets/series-plan-template.md": "d8c2482d9fd3f8fe087a9d296b0e77a9ba3d71c309b39153d100f5fa4ed5b78b",
+        "SKILL.md": "ec19403fffb869a6afe3981502a0c0fc1d5e79aa01436173d030c91e8282233d",
+        "assets/article-template.md": "e948798c6121cc5b8165daafcc9a7666e70fea5e490fb1c07b90263b476f8a69",
+        "assets/series-plan-template.md": "e464d8e98e767c5bd4dbb9bd1c634f5200a37aca3f643c28a42bf6161f4edc45",
         "references/article-structure.md": "4bd8a89254c320ae4b801ca10c8bffa5665be876ab7affbb6bbcf448dccb55a6",
-        "references/diagram-guidelines.md": "7bf0b60c0393e63d1c7aa083da6a411d0e8f7d07ca88850aead08cb44efe1547",
+        "references/diagram-guidelines.md": "8444a6d1bc9e5eda1e77eec8cfe3c88d6a30322251cabd712e0363458a42ea2f",
         "references/evidence-rules.md": "7f957d2306b1c187d67f0a25b140927be0b229abcaa7c938b18631abec49167f",
         "references/mooncake.md": "9ddceb3f614daedc57de8eed3e80586122a4d2f721bf0201038314d8f0550d39",
         "references/shared-method.md": "935c70e840c086b257c89e320b500b611fccaf97d8a6f9b73c5cff06df70c66a"
@@ -262,7 +307,8 @@
       "category": "project",
       "description_sha256": "5eb6597c8e5b0e0380b9db33f81d0e0d2d2e6404568a06852e9984ce3a60c6d3",
       "files": {
-        "SKILL.md": "65437e5ad996df28750c56fc66164f01f8a9610825f7a5c518b487968b038b55",
+        "SKILL.md": "f7c3cc8f743031c6bf42f646a59601eceb30bb4438c54b1e9bbfd32d546a99d2",
+        "references/ascii-diagram-rules.md": "cb6530775b1d1f27d03b22372e65434ed094066168614fcdf3a3c02fa0681ece",
         "references/project-layout.md": "5aab6d7121f0c09b277c52241cfbb99fdc52dfcc12d3e866b2fc9315264dda0d"
       },
       "generated_files": [],
@@ -276,8 +322,8 @@
       "category": "project",
       "description_sha256": "22e06b56b8849a842d84432e0760a99aaa1ca24eeac67b5ca74adb9123359f35",
       "files": {
-        "SKILL.md": "5e897f04cb3e40d11354592b7c58ec29b32c8e42c2611a97ca876a951ded303a",
-        "references/figures.md": "c390229d5f78ae044e2fd3f90718a21cc3ec6393a68e7b3003dd61767cce1366",
+        "SKILL.md": "2ecc74913d607423d704c9b95126c6ad2347a639663837ea06ea3526b150a3dc",
+        "references/figures.md": "97bfa06f2933144bf9b2ffa69ad9441af10b0951df82e8bb2111debabf71a133",
         "references/templates.md": "118e40ed4dcba1ae7c29e0b94f6f34b05343d9af7f1921e614c62281d003453c"
       },
       "generated_files": [],
@@ -291,50 +337,133 @@
     {
       "cited_by": [
         "docs/README.md",
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "docs/markdown-standard/examples/implementation-plan.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/bug-analysis.md",
+        "skills/writing/markdown-document-standard/references/document-types.md",
         "workflows/storage-bug-analysis/WORKFLOW.md"
       ],
       "path": "templates/bug-analysis.md",
-      "sha256": "ac35bf59833f3d32ce5f08bab651eccd5441572f889b4166ae337c14a718dcb7"
+      "sha256": "8625676b1ac4b849cb7b39e86c8b08a5baedc16c8e643a9470cead1bf27493b3"
     },
     {
       "cited_by": [
         "docs/README.md",
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "skills/storage/design-document/SKILL.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/design-document.md",
+        "skills/writing/markdown-document-standard/references/document-types.md",
         "workflows/storage-feature-design/WORKFLOW.md"
       ],
       "path": "templates/design-document.md",
-      "sha256": "0834e10d3d6d8dc03f6945e8ea190e06629adb86dd5fe190fb66de2e1d724ac3"
+      "sha256": "2f44aa5a4455591cab79862d912eba916e638fa44d5058576d9ac2bde4029e7f"
     },
     {
       "cited_by": [
         "docs/README.md",
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "docs/markdown-standard/examples/implementation-plan.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/implementation-plan.md",
+        "skills/writing/markdown-document-standard/references/document-types.md"
+      ],
+      "path": "templates/implementation-plan.md",
+      "sha256": "3543f526320b49da91abf9401fc691851b88c8db467b4f3b12836fef4ae1bdf6"
+    },
+    {
+      "cited_by": [
+        "docs/README.md",
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "docs/markdown-standard/examples/implementation-plan.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/bug-analysis.md",
+        "skills/writing/markdown-document-standard/assets/templates/incident-rca.md",
+        "skills/writing/markdown-document-standard/references/document-types.md"
+      ],
+      "path": "templates/incident-rca.md",
+      "sha256": "c23b08de9119ac15c791b1fd72a44a574976b12e055f709ffb661c7f5dd61a26"
+    },
+    {
+      "cited_by": [
+        "docs/README.md",
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/performance-analysis.md",
+        "skills/writing/markdown-document-standard/references/document-types.md",
         "workflows/storage-performance-analysis/WORKFLOW.md"
       ],
       "path": "templates/performance-analysis.md",
-      "sha256": "224aefd797b9242e46ed4ddc886c3d798b6fe790a02680924d8465fc2b350254"
+      "sha256": "84e38f0a8cbea9081c448329034be971899a2f13e7e0c804ba510aa62c5bad27"
     },
     {
       "cited_by": [
         "docs/README.md",
-        "workflows/technical-writing/WORKFLOW.md"
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "skills/storage/storage-code-analysis/SKILL.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/source-analysis.md",
+        "skills/writing/markdown-document-standard/references/document-types.md"
       ],
-      "path": "templates/technical-article.md",
-      "sha256": "a76f1331aeb65fd69c6c02848681ef6b7fec4daf8928e45d73af3ec8c1ee524c"
+      "path": "templates/source-analysis.md",
+      "sha256": "75fd98db26403f84b28f574c475f83abdf38c02ef4853308729c46cc985c66fb"
     },
     {
       "cited_by": [
-        "docs/README.md"
+        "docs/README.md",
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/technical-article.md",
+        "skills/writing/markdown-document-standard/references/document-types.md",
+        "skills/writing/wechat-tech-article/SKILL.md",
+        "workflows/technical-writing/WORKFLOW.md"
+      ],
+      "path": "templates/technical-article.md",
+      "sha256": "6bd5f4d02b3e08222a5d6f8e7d2a0439089aef65a4d557ace4e636968a61575c"
+    },
+    {
+      "cited_by": [
+        "docs/README.md",
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/technical-principles.md",
+        "skills/writing/markdown-document-standard/references/document-types.md",
+        "skills/writing/writing-project-principles/SKILL.md"
+      ],
+      "path": "templates/technical-principles.md",
+      "sha256": "bd34c6edfb863b1f45ba97cdc3c03d29566a971b134fdb0b88748085cc103cbc"
+    },
+    {
+      "cited_by": [
+        "docs/README.md",
+        "docs/markdown-standard/README.md",
+        "docs/markdown-standard/REPORT.md",
+        "skills/testing/test-case-design/SKILL.md",
+        "skills/writing/markdown-document-standard/SKILL.md",
+        "skills/writing/markdown-document-standard/assets/templates/test-case-design.md",
+        "skills/writing/markdown-document-standard/references/document-types.md"
       ],
       "path": "templates/test-case-design.md",
-      "sha256": "698b2893bed93cf37b790f88ab9560386d8f32a64feb7ec0567723d6c3231c9a"
+      "sha256": "6d424c0c8f7d4c925c38810c054af59b2ca791f010b5df47d11859fe9aa4375d"
     }
   ],
   "workflows": [
     {
       "name": "storage-bug-analysis",
       "path": "workflows/storage-bug-analysis/WORKFLOW.md",
-      "sha256": "33d5c0f0f581ac2ba3eb6ff24f48187316685fb842cdd65c03d36b7fe04ff0ae",
+      "sha256": "e08e63892034b4f35942a24ee85c8c889a8cbde29def98eaa9d5e96bd4a7342d",
       "skills": [
         "design-document",
+        "markdown-document-standard",
         "storage-code-analysis",
         "storage-concurrency-analysis",
         "storage-debug"
@@ -343,9 +472,10 @@
     {
       "name": "storage-feature-design",
       "path": "workflows/storage-feature-design/WORKFLOW.md",
-      "sha256": "d406fc5a1baa921bb6a2c5cb4c8d41dea52add06b8bab7d242fc6b7da7c1734d",
+      "sha256": "dc660affb6bf451008ba37cd8821b45f6ba154f516796b4c8692ecb6541fc77b",
       "skills": [
         "design-document",
+        "markdown-document-standard",
         "neonsan-docs",
         "storage-code-analysis",
         "storage-concurrency-analysis"
@@ -354,9 +484,10 @@
     {
       "name": "storage-performance-analysis",
       "path": "workflows/storage-performance-analysis/WORKFLOW.md",
-      "sha256": "36f9f4898335d7f2ed9ba54603ed2cce709330644bf6631ce00fac8d7ecec6b6",
+      "sha256": "9310dfe10da6b64b9381795b9614e49fc9796e970a96ef3ee7878fbd5ef75d07",
       "skills": [
         "design-document",
+        "markdown-document-standard",
         "storage-code-analysis",
         "storage-debug"
       ]
@@ -364,10 +495,11 @@
     {
       "name": "technical-writing",
       "path": "workflows/technical-writing/WORKFLOW.md",
-      "sha256": "5fdb9fba1728bf8761593bb99bcb76053678364c85377469603f1303777909a4",
+      "sha256": "5984b940abe8f8851e8666837474a2c6daca22527c2c441d5a88d7a5319587ee",
       "skills": [
         "design-document",
         "humanizer-zh",
+        "markdown-document-standard",
         "producing-tech-blog",
         "storage-code-analysis",
         "storage-debug",

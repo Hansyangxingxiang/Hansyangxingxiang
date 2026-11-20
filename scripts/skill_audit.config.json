@@ -12,10 +12,16 @@
       "skills/storage/storage-concurrency-analysis",
       "skills/storage/storage-debug",
       "skills/writing/humanizer-zh",
+      "skills/writing/markdown-document-standard",
       "skills/writing/producing-tech-blog",
       "skills/writing/wechat-tech-article",
       "skills/writing/writing-project-principles",
       "skills/testing/test-case-design"
+    ]
+  },
+  "generated_templates": {
+    "templates": [
+      "skills/writing/markdown-document-standard"
     ]
   },
   "generated_personal": {
@@ -34,6 +40,7 @@
     "wechat-",
     "producing-",
     "humanizer-",
+    "markdown-document-standard",
     "design-document",
     "ci-test-case",
     "neonsan-docs",

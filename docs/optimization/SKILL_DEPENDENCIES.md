@@ -6,10 +6,10 @@
 
 | Workflow | Skills |
 |---|---|
-| `storage-bug-analysis` | `design-document`, `storage-code-analysis`, `storage-concurrency-analysis`, `storage-debug` |
-| `storage-feature-design` | `design-document`, `neonsan-docs`, `storage-code-analysis`, `storage-concurrency-analysis` |
-| `storage-performance-analysis` | `design-document`, `storage-code-analysis`, `storage-debug` |
-| `technical-writing` | `design-document`, `humanizer-zh`, `producing-tech-blog`, `storage-code-analysis`, `storage-debug`, `wechat-tech-article`, `writing-neonsan-internals`, `writing-project-principles` |
+| `storage-bug-analysis` | `design-document`, `markdown-document-standard`, `storage-code-analysis`, `storage-concurrency-analysis`, `storage-debug` |
+| `storage-feature-design` | `design-document`, `markdown-document-standard`, `neonsan-docs`, `storage-code-analysis`, `storage-concurrency-analysis` |
+| `storage-performance-analysis` | `design-document`, `markdown-document-standard`, `storage-code-analysis`, `storage-debug` |
+| `technical-writing` | `design-document`, `humanizer-zh`, `markdown-document-standard`, `producing-tech-blog`, `storage-code-analysis`, `storage-debug`, `wechat-tech-article`, `writing-neonsan-internals`, `writing-project-principles` |
 
 ## Command -> Workflow
 
@@ -24,11 +24,15 @@
 
 | Template | Cited by |
 |---|---|
-| `templates/bug-analysis.md` | `docs/README.md`<br>`workflows/storage-bug-analysis/WORKFLOW.md` |
-| `templates/design-document.md` | `docs/README.md`<br>`workflows/storage-feature-design/WORKFLOW.md` |
-| `templates/performance-analysis.md` | `docs/README.md`<br>`workflows/storage-performance-analysis/WORKFLOW.md` |
-| `templates/technical-article.md` | `docs/README.md`<br>`workflows/technical-writing/WORKFLOW.md` |
-| `templates/test-case-design.md` | `docs/README.md` |
+| `templates/bug-analysis.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`docs/markdown-standard/examples/implementation-plan.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/bug-analysis.md`<br>`skills/writing/markdown-document-standard/references/document-types.md`<br>`workflows/storage-bug-analysis/WORKFLOW.md` |
+| `templates/design-document.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`skills/storage/design-document/SKILL.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/design-document.md`<br>`skills/writing/markdown-document-standard/references/document-types.md`<br>`workflows/storage-feature-design/WORKFLOW.md` |
+| `templates/implementation-plan.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`docs/markdown-standard/examples/implementation-plan.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/implementation-plan.md`<br>`skills/writing/markdown-document-standard/references/document-types.md` |
+| `templates/incident-rca.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`docs/markdown-standard/examples/implementation-plan.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/bug-analysis.md`<br>`skills/writing/markdown-document-standard/assets/templates/incident-rca.md`<br>`skills/writing/markdown-document-standard/references/document-types.md` |
+| `templates/performance-analysis.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/performance-analysis.md`<br>`skills/writing/markdown-document-standard/references/document-types.md`<br>`workflows/storage-performance-analysis/WORKFLOW.md` |
+| `templates/source-analysis.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`skills/storage/storage-code-analysis/SKILL.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/source-analysis.md`<br>`skills/writing/markdown-document-standard/references/document-types.md` |
+| `templates/technical-article.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/technical-article.md`<br>`skills/writing/markdown-document-standard/references/document-types.md`<br>`skills/writing/wechat-tech-article/SKILL.md`<br>`workflows/technical-writing/WORKFLOW.md` |
+| `templates/technical-principles.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/technical-principles.md`<br>`skills/writing/markdown-document-standard/references/document-types.md`<br>`skills/writing/writing-project-principles/SKILL.md` |
+| `templates/test-case-design.md` | `docs/README.md`<br>`docs/markdown-standard/README.md`<br>`docs/markdown-standard/REPORT.md`<br>`skills/testing/test-case-design/SKILL.md`<br>`skills/writing/markdown-document-standard/SKILL.md`<br>`skills/writing/markdown-document-standard/assets/templates/test-case-design.md`<br>`skills/writing/markdown-document-standard/references/document-types.md` |
 
 ## Skill -> Local files
 
@@ -40,9 +44,10 @@
 | `storage-debug` (hans) | `references/shared-method.md` |
 | `test-case-design` (hans) | `references/case-template.md`, `references/implementation-classes.md`, `references/scenario-checklist.md`, `references/shared-method.md` |
 | `humanizer-zh` (hans) | `.gitignore`, `LICENSE`, `README.md`, `references/patterns-catalog.md`, `references/shared-method.md`, `scripts/check_style.py` |
+| `markdown-document-standard` (hans) | `assets/templates/bug-analysis.md`, `assets/templates/design-document.md`, `assets/templates/implementation-plan.md`, `assets/templates/incident-rca.md`, `assets/templates/performance-analysis.md`, `assets/templates/source-analysis.md`, `assets/templates/technical-article.md`, `assets/templates/technical-principles.md`, `assets/templates/test-case-design.md`, `references/ascii-diagram-guide.md`, `references/document-review-checklist.md`, `references/document-types.md`, `references/existing-document-editing.md`, `references/markdown-style-guide.md`, `references/shared-method.md`, `references/technical-writing-guide.md`, `scripts/doc_lint.py`, `scripts/tests/fixtures/bad/ascii.md`, `scripts/tests/fixtures/bad/fence.md`, `scripts/tests/fixtures/bad/h1.md`, `scripts/tests/fixtures/bad/jump.md`, `scripts/tests/fixtures/bad/link.md`, `scripts/tests/fixtures/bad/metadata.md`, `scripts/tests/fixtures/bad/table-columns.md`, `scripts/tests/fixtures/bad/table-separator.md`, `scripts/tests/fixtures/good/clean-target.md`, `scripts/tests/fixtures/good/clean.md`, `scripts/tests/fixtures/good/legacy.md`, `scripts/tests/test_doc_lint.py` |
 | `producing-tech-blog` (hans) | `project-conventions.template.md`, `references/BLOG_IMAGE_GUIDE.md`, `references/TECH_REVIEW_CHECKLIST.md`, `references/shared-method.md`, `scripts/blog_lint.py`, `scripts/md2wx.py`, `wechat-styles.md` |
 | `wechat-tech-article` (hans) | `references/shared-method.md` |
 | `writing-project-principles` (hans) | `assets/article-template.md`, `assets/series-plan-template.md`, `references/article-structure.md`, `references/diagram-guidelines.md`, `references/evidence-rules.md`, `references/mooncake.md`, `references/shared-method.md` |
 | `ci-test-case` (personal) | `references/case-template.md`, `references/ci-navigation.md`, `references/scenario-checklist.md`, `references/shared-method.md` |
-| `neonsan-docs` (personal) | `references/project-layout.md` |
+| `neonsan-docs` (personal) | `references/ascii-diagram-rules.md`, `references/project-layout.md` |
 | `writing-neonsan-internals` (personal) | `references/figures.md`, `references/templates.md` |
